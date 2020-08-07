@@ -1,9 +1,11 @@
 # UniTesTReport 
 
-- #### unittest 生成测试报告
+- #### unittest 生成测试报告  unittest测试用例多线程执行
 
-- #### unittest测试用例多线程执行
+- #### 使用教程 http://testingpai.com/article/1595507317340
 - #### 安装命令 pip install unittestreport
+
+
 
 ### 一、使用说明
 
