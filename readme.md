@@ -1,192 +1,288 @@
-# UniTesTReportV1.0.9
+# unittestreport—V1.1.1版本使用详细文档
 
-#### 备注：
+### 前言
 
-- ##### 开发者：柠檬班—木森
+关于unittestreport最初在开发的时候，最初只是计划开发一个unittest生成html测试报告的模块，所以起名叫做unittestreport。在开发的过程中结合使用的小伙伴的一些反馈，所以慢慢的扩展了更多的功能进去。之前在写unittestreport的时候，也陆续写了几遍关于unittestreport相关功能的使用，每次都是一个特定的功能，这边给出一遍系统的使用文档来给大家介绍一下unittestreport的功能。
 
-- ##### E-mail:musen_nmb@qq.com
+- #### 关于unittestreport是什么？
 
-- ##### 大家在使用过程中发现bug,可以联系我，以便优化解决！
+    - unittestreport是基于unittest开发的的一个功能扩展库，为unittest提供了一些常用的扩展功能：
 
-- ##### 安装命令 
+        - HTML测试报告生成
+        - 测试用例失败重运行
+        - 发送测试结果及报告到邮箱
+        - unittest数据驱动
+
+- #### 安装命令：
+
+    cmd命令行下输入下面的命令进行安装
 
     ```
     pip install unittestreport
     ```
 
-## 一、本模在unittest上扩展的几个功能的问题
+- #### 备注：
 
-- ##### 功能一： unittest 生成多种风格的测试html报告
+    - ##### 开发者：柠檬班—木森
 
-- ##### 功能二： unittest 用例多线程执行机制
+    - ##### E-mail:musen_nmb@qq.com
 
-- ##### 功能三： unittest 用例失败重运行机制（1.0.9版本新增）
+    - ##### 大家在使用过程中发现bug,可以联系我，以便优化解决！
 
-- ##### 后续会持续，更新请关注项目github： https://github.com/musen123/UnitTestReport 
+### 一、HTML测试报告生成
 
-## 二、unittest生成测试HTML报告
+unittestteport中封装了一个TestRunner类，可以用来代替unittest中的TextTestRunner来执行测试用例，执行完测试用例之后会自动生成测试报告。并且有多种报告风格可选
 
-- ##### 关于测试报告
+- #### 模块导入
 
-    - 本模块可以生成3个风格的测试报告
-    （ps:一种自己编写的，另一种风格由的BeautifulReport的报告模板稍加修改而来）
-    - 另外为了方便大家使用，本模块还集成了HTMLTestRunnerNew这个生成报告的模块
-    - 模块自带报告截图
-    - ![1594961041386](http://testingpai.com/upload/file/2020/ef9be15f-79fc-4a5d-8861-9ea7f62989c8.png)
-
-    
-
-- ##### 关于TestRunner类初始化，以及允许方法的参数说明
-
-    ```python
-    class TestRunner():
-        """unittest运行程序"""
-
-        def __init__(self, suite: unittest.TestSuite,
-                     filename="report.html",
-                     report_dir=".",
-                     title='测试报告',
-                     tester='木森',
-                     desc="木森执行测试生产的报告",
-                     templates=1
-                     ):
-            """
-            初始化用例运行程序
-            :param suites: 测试套件
-            :param filename: 报告文件名
-            :param report_dir:报告文件的路径
-            :param title:测试套件标题
-            :param templates: 可以通过参数值1或者2，指定报告的样式模板，目前只有两个模板
-            :param tester:
-            """
-    ```
+```python
+from unittestteport import TestRunner
+```
 
 - #### 使用案例
 
-    ```python
-    import unittest
-    from unittestreport import TestRunner
-    
-    # 加载测试套件
-    suite1 = unittest.defaultTestLoader.discover(r"C:\project\musen\case_test")
-    # 创建运行对象
-    runner = TestRunner(suite1, 
-                        title='木森的测试报告',
-                        filename="musen02",
-                        templates=1)
-    # 运行测试
-    runner.run()
-    ```
-
-    
-
-
-
-## 三、关于多线程执行
-
-- 因为考虑到测试用例执行的顺序问题，本模块提供了多线程执行用例的方法式
-- TestRunner.run：可以通过参数来设置启动执行线程的数量，和线程中最小的用例执行单元，
-    thread_count:线程数量，默认位1
-    exec_unit: case ro class
-        case: 以测试用例为单位开启多线程运行，不能保证用例执行的顺序问题
-        class:以用例类为单位开启多线程运行，可以保证用例类中的用例执行的顺序问题
-
 ```python
-    def run(self, thread_count=1, exec_unit="class"):
-        """
-        支持多线程执行
-        注意点：如果多个测试类共用某一个全局变量，由于资源竞争可能回出现错误
-        :param thread_count:线程数量，默认位1
-        :param exec_unit: case ro class
-                case: 以测试用例为单位开启多线程运行，不能保证用例执行的顺序问题
-                class:以用例类为单位开启多线程运行，可以保证用例类中的用例执行的顺序问题
-        :return:
-        """
+runner = TestRunner(test_suite)
+runner.run()
 ```
 
+- #### 关于TestRunner初始化参数
 
+    - ######  suites: 测试套件（必传）
 
-## 四、unittest用例重运行
+    - ######  filename: 指定报告文件名
 
-​		关于unittest重运行机制，unittestreport中提供了两种方式，第一种局部生效的，可以自己去标记失败需要重运行的测试用例，第二种是全局的，所有的测试用例，只要运行失败都会重运行。那么接下来一个一个给大家介绍。
+    - ######  report_dir:指定存放报告路径
 
-#### 1、单个用例重运行
+    - ######  title:指定测试报告的标题
 
-- 如果像标记单个测试用例失败重运行，库用直接使用unittestreport中的rerun来标记测试用例，rerun接收两个参数count,和interval。
-    - count：用来指定用例失败重运行的次数
-    - interval：指定每次重运行的时间间隔
+    - ######  templates: 可以指定1，2，3三个风格的模板
 
-- 下面有三个测试用例，其中有一个test_case_01使用了rerun进行了标记，设置的失败重运行次数为4次，每次间隔的时间2秒。
+    - ######  tester:测试人员名称
 
-```python
-import unittest
-from unittestreport import rerun
+- #### 报告样式展示：
 
-class TestClass(unittest.TestCase):
-    @rerun(count=4, interval=2)
-    def test_case_01(self):
-        a = 100
-        b = 99
-        assert a == b
+    ![1598866900740](C:\课件\images\1598866900740-4967c8ad-1598940106149.png )
+
+### 二、测试用例失败重运行
+
+​	关于unittest重运行机制，unittestreport中提供了两种方式
+
+- ##### 方式一： rerun装饰器
+
+    - ###### 使用案例：使用rerun装饰失败需要重运行的用例，该用例失败后会自动重运行
+
+        ```python
+        from unittestreport import rerun
         
-    def test_case_02(self):
-        a = 100
-        b = 101
-        assert a == b
-        
-```
+        class TestClass(unittest.TestCase):
+            @rerun(count=4, interval=2)
+            def test_case_01(self):
+                a = 100
+                b = 99
+                assert a == b
+        ```
 
-- 运行上述用例
+    - ###### 用例运行
+
+        ```
+        runner = TestRunner(test_suite)
+        runner.run()
+        ```
+
+        
+
+    - ###### 参数说明：
+
+        - count：用来指定用例失败重运行的次数
+        - interval：指定每次重运行的时间间隔
+
+- ##### 方式二：TestRunner.rerun方法
+
+    - ###### 使用案例：所有的用例失败，只要有失败的用例，会自动重运行该用例
+
+    - 用例正常编写即可
+
+    - 运行是使用TestRunner.rerun_run方法运行
+
+        ```python
+        runner = TestRunner(suite=suite)
+        runner.rerun_run(count=3, interval=2)
+        ```
+
+    - ###### 参数说明：
+
+        - count：用来指定用例失败重运行的次数
+        - interval：指定每次重运行的时间间隔
+
+### 三、邮件发送测试报告
+
+unittestreport内部实现了发生测试结果到邮箱的方法，执行完测试用例之后调用发送测试报告的方法即可。发邮件的方法介绍：TestRunner类中实现了send_email方法，可以方便用户，快速发送邮件。
+
+- ##### 使用案例
 
     ```python
-    import unittest
-    from unittestreport import TestRunner
-    from testcase import TestClass  # 导入上面写的测试用例类
-    # 加载测试套件
-    suite = unittest.defaultTestLoader.loadTestsFromTestCase(TestClass)
-    # 执行测试用例
-    runner = TestRunner(suite=suite)
+    runner = TestRunner(suite)
     runner.run()
+    runner.send_email(host="smtp.qq.com",
+                      port=465,
+                      user="musen_nmb@qq.com",
+                      password="algmmzptupjccbab",
+                      to_addrs="3247119728@qq.com")
     ```
 
+- ##### 参数介绍
 
-#### 2、全部用例失败重跑机制
+    - ###### host： smtp服务器地址
 
-- 关于所有的测试用例失败重跑，unittestreport中提供了一个更为简单的使用入口，直接使用unittestreport中TestRunner对象的rerun_run方法即可实现所有的用例失败重运行，rerun_run同样有两个参数，count和interval。
+    - ###### port：端口
 
-    - count：用来指定用例失败重运行的次数
-    - interval：指定每次重运行的时间间隔
+    - ######  user：邮箱账号
 
-- 测试用例如下：
+    - ###### password：smtp服务授权码
 
-    ```python
-    import unittest
-    from unittestreport import rerun
-    
-    class TestClass(unittest.TestCase):
-        def test_case_01(self):
-            a = 100
-            b = 99
-            assert a == b 
-       def test_case_02(self):
-            a = 100
-            b = 101
-            assert a == b
+    - ###### to_addrs：收件人邮箱地址（一个收件人传字符串，多个收件人传列表）
+
+- ##### 收到的邮件样式
+
+![1598866521882](C:\课件\images\1598866521882-8470de3c.png )
+
+### 四、数据驱动的使用
+
+​	关于数据驱动这边就不给大家做过多的介绍了，数据驱动的目的是将测试数据和用例逻辑进行分离，提高代码的重用率，以及用例的维护，关于数据驱动本，unittestreport.dataDriver模块中实现了三个使用方法，支持使用列表(可迭代对象)、json文件、yaml文件来生成测试用例，接来分别给大家介绍一下使用方法：
+
+- #### 1、使用介绍
+
+    ```
+    from unittestreport.dataDriver import ddt, list_data,json_data,yaml_data
     ```
 
-- 使用unittestreport的重运行机制，运行上述用例
+    - ###### 第一步：使用ddt装饰测试用例类
 
-    ```python
-    import unittest
-    from unittestreport import TestRunner
-    from testcase import TestClass  # 导入测试用例类
-    
-    # 测试套件
-    suite = unittest.defaultTestLoader.loadTestsFromTestCase(TestClass)
-    # 创建执行对象
-    runner = TestRunner(suite=suite)
-    # 执行测试用例，失败重运行设置为3次，间隔时间为2秒
-    runner.rerun_run(count=3, interval=2)
-    ```
+    - ###### 第二步：根据使用的数据选择对应的方法进行驱动
 
-- 执行测试可以看到失败的用例，都重复运行了三次：
+- #### 2、使用案例
+
+    - ##### 一、用例保存在可迭代对象中（如列表）：使用list_data
+
+        ```python
+        from unittestreport import ddt, data
+        @ddt
+        class TestClass(unittest.TestCase):
+            cases = [{'title': '用例1', 'data': '用例参数', 'expected': '预期结果'}, 
+                     {'title': '用例2', 'data': '用例参数', 'expected': '预期结果'},
+                     {'title': '用例3', 'data': '用例参数', 'expected': '预期结果'}]
+            @data(cases)
+            def test_case(self, data):
+                pass
+        
+        ```
+
+    - ##### 二、用例保存在json文件中：使用json_data
+
+        ```python
+        from unittestreport import ddt,json_data
+        
+        @ddt
+        class TestClass(unittest.TestCase):
+            @yaml_data("C:/xxxx/xxx/cases.json")
+            def test_case(self, data):
+                pass
+        
+        ```
+
+        - json文件中的数据格式
+
+            cases.json文件
+
+            ```json
+            [
+              {
+                "title": "用例1",
+                "data": "用例参数",
+                "expected": "预期结果"
+              },
+              {
+                "title": "用例2",
+                "data": "用例参数",
+                "expected": "预期结果"
+              },
+              {
+                "title": "用例3",
+                "data": "用例参数",
+                "expected": "预期结果"
+              }
+            ]
+            
+            ```
+
+    - ##### 三、用例保存在yaml文件中：使用yaml_data
+
+        ```python
+        from unittestreport import ddt,yaml_data
+        
+        @ddt
+        class TestClass(unittest.TestCase):
+            @yaml_data("C:/xxxx/xxx/cases.yaml")
+            def test_case(self, data):
+                pass
+        
+        ```
+
+        - ###### yaml文件中的数据展示
+
+            cases.yaml文件
+
+            ```yaml
+            - title: 用例1
+              data: 用例参数
+              expected: 预期结果
+            
+            - title: 用例2
+              data: 用例参数
+              expected: 预期结果
+              
+            - title: 用例4
+              data: 用例参数
+              expected: 预期结果
+            
+            ```
+
+- #### 2、注意点：
+
+    - 关于使用ddt的时候进行数据驱动，指定测试报告中的用例描述：
+
+    - 测试报告中的用例描述默认使用的是用例方法的文档字符串注释，
+    - 如果要给每一条用例添加用例描述，需要在用例数据中添加title或者desc字段，字段对应的数据会自动设置为测试报告中用例的描述
+
+    ![1598929137584](C:\课件\images\1598929137584-877329ac.png )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
