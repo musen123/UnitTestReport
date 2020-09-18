@@ -166,13 +166,13 @@ unittestreport内部实现了发生测试结果到邮箱的方法，执行完测
     - ##### 一、用例保存在可迭代对象中（如列表）：使用list_data
 
         ```python
-        from unittestreport import ddt, data
+        from unittestreport import ddt, list_data
         @ddt
         class TestClass(unittest.TestCase):
             cases = [{'title': '用例1', 'data': '用例参数', 'expected': '预期结果'}, 
                      {'title': '用例2', 'data': '用例参数', 'expected': '预期结果'},
                      {'title': '用例3', 'data': '用例参数', 'expected': '预期结果'}]
-            @data(cases)
+            @list_data(cases)
             def test_case(self, data):
                 pass
         
