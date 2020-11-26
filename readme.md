@@ -295,7 +295,7 @@ runner = TestRunner(suite)
 # 执行用例
 runner.run()
 
-url = "https://oapi.dingtalk.com/robot/send?access_token=6e2a63c2b9d870ee878335b5ce6d5d10bb1218b8e64a4e2b55f96a6d116aaf50"
+url = "https://oapi.dingtalk.com/robot/send?access_token=XXXXXXX"
 # 发送钉钉通知  
 runner.dingtalk_notice(url=url, key='钉钉安全设置的关键字',secret='钉钉安全设置签名的秘钥')
 
