@@ -1,0 +1,15 @@
+- case_id: 1
+  title: 用例1
+  data: 用例参数
+  expected: 预期结果
+
+- case_id: 2
+  title: 用例2
+  data: 用例参数
+  expected: 预期结果
+
+- case_id: 2
+  title: 用例2
+  data: 用例参数
+  expected: 预期结果
+

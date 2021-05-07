@@ -13,13 +13,13 @@ with open("readme.md", "r", encoding='utf8') as fh:
 
 setup(
     name='unittestreport',
-    version='1.1.1',
+    version='1.1.10',
     author='MuSen',
     author_email='musen_nmb@qq.com',
     url='https://github.com/musen123/UnitTestReport',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    install_requires=["Jinja2==2.10.1", "PyYAML==5.3.1"],
+    install_requires=["Jinja2==2.10.1", "PyYAML==5.3.1","requests==2.24.0"],
     packages=find_packages(),
     package_data={
         "": ["*.html"],

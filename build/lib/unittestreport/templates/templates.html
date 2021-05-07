@@ -109,6 +109,7 @@
             height: 30px;
             margin: 0;
             padding-left: 3em;
+            padding-right:3em;
             font: none 18px/24px "Microsoft YaHei UI";
             color: #9e141a;
         }
@@ -268,7 +269,7 @@
 
                 <tr class="test_log">
 
-                    <td colspan="7">
+                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
                         {% for item in foo.run_info %}
 
                             <pre>{{ item }}</pre>

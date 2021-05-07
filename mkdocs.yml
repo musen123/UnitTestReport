@@ -1,0 +1,13 @@
+site_name: Apin 使用文档
+nav:
+  - 一、apin安装和介绍: doc1_index1.md
+  - 二、快速入门: doc2_start.md
+  - 三、用例编写: doc3_cases.md
+  - 四、变量提取和引用: doc4_extract.md
+  - 五、用例断言: doc5_assert.md
+  - 六、函数工具: doc6_functon.md
+  - 七、全局配置: doc7_settings.md
+  - 八、用例前后置: doc8_fixtrue.md
+
+theme: readthedocs
+

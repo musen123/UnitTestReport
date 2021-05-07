@@ -1,7 +1,9 @@
-# unittestreport—V1.1.9版本使用详细文档
+# unittestreport—V1.1.10版本使用详细文档
 
 - ###### 1.1.8新增功能：发送测试结果到钉钉群
+
 - ###### 1.1.9新增功能：测试结果推送到企业微信群（未测试，欢迎大家提bug）
+- ###### 1.1.10优化:邮件发送测试结果，支持25端口
 
 ### 前言
 
@@ -16,8 +18,6 @@
         - 发送测试结果及报告到邮箱
         - unittest数据驱动
         - 测试结果钉钉通知
-        - 测试结果推送到企业微信群
-       
 - #### 安装命令：
 
     cmd命令行下输入下面的命令进行安装
@@ -190,7 +190,7 @@ unittestreport内部实现了发生测试结果到邮箱的方法，执行完测
         
         @ddt
         class TestClass(unittest.TestCase):
-            @json_data("C:/xxxx/xxx/cases.json")
+            @json_data(apitest)
             def test_case(self, data):
                 pass
         
@@ -266,9 +266,9 @@ unittestreport内部实现了发生测试结果到邮箱的方法，执行完测
 
 
 
-### 五、发送测试结果到钉钉
+### 五、推送测试结果到钉钉
 
-​	关于把如果测试结果发送到钉钉群，unittestreport里面进行了封装。执行完用例之后，调用TestRunner对象的dingtalk_notice方法即可。
+​	关于把测试结果推送到钉钉群，unittestreport里面进行了封装。执行完用例之后，调用TestRunner对象的dingtalk_notice方法即可。
 
 - #### 参数介绍
 
@@ -298,17 +298,16 @@ runner = TestRunner(suite)
 # 执行用例
 runner.run()
 
-url = "https://oapi.dingtalk.com/robot/send?access_token=XXXXXXX"
+url = "https://oapi.dingtalk.com/robot/send?access_token=6e2a63c2b9d870ee878335b5ce6d5d10bb1218b8e64a4e2b55f96a6d116aaf50"
 # 发送钉钉通知  
 runner.dingtalk_notice(url=url, key='钉钉安全设置的关键字',secret='钉钉安全设置签名的秘钥')
 
 # 备注：关于钉钉群机器人的创建大家可以去看钉钉开放平台上的教程，关键字和秘钥，根据创建钉钉机器人时设置的去添加，没有设置就不需要传这个参数。
 ```
 
-
 ### 六、推送测试结果到企业微信
 
-​	目前也有不少的公司使用企业微信办公，自动化跑完之后，测试结果需要推送到企业微信群，所以把这个功能做了一下集成（其实大家自己去写也没多少代码)。执行完用例之后，调用TestRunner对象的weixin_notice方法即可将测试结果推送到企业微信群。
+​	目前也有不少的公司使用企业微信办公，自动化跑完之后，测试结果需要推送到企业微信群，所以把这个功能做了一下集成（其实大家自己去些也没多少代码)。执行完用例之后，调用TestRunner对象的weixin_notice方法即可将测试结果推送到企业微信群。
 
 - #### 参数介绍
 
@@ -338,10 +337,6 @@ runner.weixin_notice(chatid="企业微信群id", access_token="调用企业微�
 # 方式二：
 runner.weixin_notice(chatid="企业微信群id",corpid='企业ID', corpsecret='应用的凭证密钥')
 ```
-
-
-
-
 
 
 
