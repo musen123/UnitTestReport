@@ -35,5 +35,5 @@ runner.send_email(host="smtp.qq.com",
 
 #### 3、收到的邮件样式
 
-![image](.\img\1620456241096.png )
+![image](..\img\1620456241096.png )
 
