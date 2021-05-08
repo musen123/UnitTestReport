@@ -3,61 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a1bab853-8957-4a51-b8ea-57fafb8d5643" name="Default Changelist" comment="V1.0.7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/css/theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/css/theme_extra.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/doc1_info/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/doc2_report/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/doc3_rerun/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/doc4_email/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/doc5_ddt/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/doc6_dingding/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/doc7_webchat/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/doc8_thread/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-bolditalic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-bolditalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-bolditalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-bolditalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/Lato/lato-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/RobotoSlab/roboto-slab-v7-bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/RobotoSlab/roboto-slab-v7-bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/RobotoSlab/roboto-slab-v7-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/RobotoSlab/roboto-slab-v7-bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/RobotoSlab/roboto-slab-v7-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/RobotoSlab/roboto-slab-v7-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/RobotoSlab/roboto-slab-v7-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/RobotoSlab/roboto-slab-v7-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/RobotoSlab/roboto-slab.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/img/1615966527547.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/img/1620454193693.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/img/1620456241096.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/js/jquery-2.1.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/js/modernizr-2.8.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/js/theme.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/search/lunr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/search/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/search/search_index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/search/worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/sitemap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/sitemap.xml.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.rst" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,9 +97,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="38" />
-    <option name="y" value="53" />
-    <option name="width" value="1942" />
+    <option name="x" value="36" />
+    <option name="y" value="24" />
+    <option name="width" value="1084" />
     <option name="height" value="1025" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -170,6 +116,11 @@
               <item name="UnitTestReport" type="b2602c69:ProjectViewProjectNode" />
               <item name="UnitTestReport" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="UnitTestReport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnitTestReport" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -179,7 +130,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -191,11 +142,11 @@
       <recent name="C:\project\MSUnitTestReport\UnitTestReport\unittestreport" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git_project\UnitTestReport" />
       <recent name="C:\git_project\UnitTestReport\docs\img" />
       <recent name="C:\project\MSUnitTestReport\UnitTestReport\images" />
       <recent name="C:\project\MSUnitTestReport\UnitTestReport" />
       <recent name="C:\project\MSUnitTestReport\UnitTestReport\tests" />
-      <recent name="C:\project\MSUnitTestReport\UnitTestReport\unittestreport\core" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -360,7 +311,7 @@
       <workItem from="1598663805726" duration="27000" />
       <workItem from="1598842489514" duration="28300000" />
       <workItem from="1620396271165" duration="2632000" />
-      <workItem from="1620455131385" duration="4867000" />
+      <workItem from="1620455131385" duration="6361000" />
     </task>
     <task id="LOCAL-00001" summary="V1.0.0">
       <created>1594888587671</created>
@@ -440,13 +391,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112455000" />
+    <option name="totallyTimeSpent" value="113949000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="53" width="1942" height="1025" extended-state="0" />
-    <editor active="true" />
+    <frame x="36" y="24" width="1084" height="1025" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.19679144" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.36363637" />
       <window_info id="Structure" order="1" sideWeight="0.50143266" side_tool="true" weight="0.30602008" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -507,13 +457,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/functools.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unittestreport/core/ddt.py" />
     <entry file="file://$PROJECT_DIR$/unittestreport/core/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -820,6 +763,9 @@
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
