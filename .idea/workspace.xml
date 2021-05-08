@@ -2,40 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1bab853-8957-4a51-b8ea-57fafb8d5643" name="Default Changelist" comment="V1.0.7">
-      <change afterPath="$PROJECT_DIR$/images/1598866521882-8470de3c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/1598866900740-4967c8ad-1598940106149.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/1598929137584-877329ac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/cases.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/cases.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sendDingTalk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittestreport/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittestreport/core/dataDriver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittestreport/core/reRun.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittestreport/core/sendEmail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittestreport/core/testResult.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittestreport/core/testRunner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittestreport/templates/templates03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/UnitTestReport.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UnitTestReport.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/HTMLReport.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/HTMLReport.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates02.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport.egg-info/SOURCES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport.egg-info/requires.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport.egg-info/top_level.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport/HTMLReport.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport/HTMLTestRunnerNew.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport/templates/templates.html" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport/templates/templates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport/templates/templates02.html" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport/templates/templates02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doc1_index1.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doc1_index1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doc2_start.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doc2_start.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doc3_cases.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doc3_cases.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doc4_extract.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doc4_extract.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doc5_assert.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doc5_assert.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doc6_functon.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doc6_functon.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doc7_settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doc7_settings.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doc8_fixtrue.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doc8_fixtrue.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/cases.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/cases.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ptest_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittestreport/core/testRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport/core/testRunner.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,11 +31,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="56" />
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="388">
+                <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/doc1_index1.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="150">
+                <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -97,10 +98,8 @@
         <option value="$PROJECT_DIR$/unittestreport/core/sendEmail.py" />
         <option value="$PROJECT_DIR$/tests/report.html" />
         <option value="$PROJECT_DIR$/unittestreport/templates/templates03.html" />
-        <option value="$PROJECT_DIR$/unittestreport/core/testRunner.py" />
         <option value="$PROJECT_DIR$/tests/cases.json" />
         <option value="$PROJECT_DIR$/tests/cases.yaml" />
-        <option value="$PROJECT_DIR$/tests/run.py" />
         <option value="$PROJECT_DIR$/tests/test_case.py" />
         <option value="$PROJECT_DIR$/tests/__init__.py" />
         <option value="$PROJECT_DIR$/unittestreport/core/dataDriver.py" />
@@ -108,14 +107,18 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/tests/sendDingTalk.py" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/mkdocs.yml" />
+        <option value="$PROJECT_DIR$/tests/run.py" />
+        <option value="$PROJECT_DIR$/unittestreport/core/testRunner.py" />
+        <option value="$PROJECT_DIR$/docs/doc1_index1.md" />
         <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
-    <option name="y" value="5" />
-    <option name="width" value="1822" />
+    <option name="x" value="19" />
+    <option name="y" value="43" />
+    <option name="width" value="1942" />
     <option name="height" value="1025" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -124,6 +127,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,11 +135,26 @@
               <item name="UnitTestReport" type="b2602c69:ProjectViewProjectNode" />
               <item name="UnitTestReport" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="UnitTestReport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnitTestReport" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnitTestReport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnitTestReport" type="462c0819:PsiDirectoryNode" />
+              <item name="unittestreport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnitTestReport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnitTestReport" type="462c0819:PsiDirectoryNode" />
+              <item name="unittestreport" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,7 +163,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -239,6 +258,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in C:/git_project/UnitTestReport/tests/test_case.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="UnitTestReport" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_case.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in dataDriver.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="UnitTestReport" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,34 +288,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_case.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="UnitTestReport" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_case.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.__init__" />
       <item itemvalue="Python.dataDriver" />
       <item itemvalue="Python.run" />
       <item itemvalue="Python tests.Unittests in dataDriver.py" />
-      <item itemvalue="Python tests.Unittests in test_case.py" />
+      <item itemvalue="Python tests.Unittests in C:/git_project/UnitTestReport/tests/test_case.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
         <item itemvalue="Python.dataDriver" />
         <item itemvalue="Python.__init__" />
-        <item itemvalue="Python tests.Unittests in test_case.py" />
+        <item itemvalue="Python tests.Unittests in C:/git_project/UnitTestReport/tests/test_case.py" />
         <item itemvalue="Python tests.Unittests in dataDriver.py" />
       </list>
     </recent_temporary>
@@ -321,6 +340,8 @@
       <workItem from="1598511974543" duration="5924000" />
       <workItem from="1598663805726" duration="27000" />
       <workItem from="1598842489514" duration="28300000" />
+      <workItem from="1620396271165" duration="2632000" />
+      <workItem from="1620455131385" duration="2417000" />
     </task>
     <task id="LOCAL-00001" summary="V1.0.0">
       <created>1594888587671</created>
@@ -400,13 +421,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104956000" />
+    <option name="totallyTimeSpent" value="110005000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="4" width="1457" height="820" extended-state="1" />
+    <frame x="19" y="43" width="1942" height="1025" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.19871336" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.18449198" />
       <window_info id="Structure" order="1" sideWeight="0.50143266" side_tool="true" weight="0.30602008" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -419,8 +440,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.21714285" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003762" side_tool="true" weight="0.23348695" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49962378" visible="true" weight="0.21802326" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003762" side_tool="true" weight="0.3593023" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49962378" visible="true" weight="0.18023255" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.4342857" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -433,6 +454,9 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/unittestreport" />
+    </ignored-roots>
     <MESSAGE value="V1.0.0" />
     <MESSAGE value="V1.0.3" />
     <MESSAGE value="V1.0.7" />
@@ -464,44 +488,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/python37/Lib/site-packages/pytest_rerunfailures-9.0.dist-info/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/python37/Lib/site-packages/pytest_rerunfailures-9.0.dist-info/INSTALLER">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/python37/Lib/site-packages/pytest_rerunfailures-9.0.dist-info/entry_points.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/core/HTMLTestRunnerNew.py" />
-    <entry file="file://C:/python37/Lib/email/message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11727">
-          <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/python37/Lib/email/mime/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/1986093431/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unittestreport/core/email.py" />
     <entry file="file://C:/python37/Lib/email/mime/multipart.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -569,19 +555,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/core/ddt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
-          <folding>
-            <element signature="e#1254#1681#0" />
-            <element signature="e#3892#4421#0" />
-            <element signature="e#4452#4576#0" />
-            <element signature="e#5283#5893#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/core/ddt.py" />
     <entry file="file://$PROJECT_DIR$/unittestreport/core/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -692,59 +666,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DingTalk/top/api/rest/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DingTalk/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-327">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DingTalk/aliyun_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DingTalk/dingtalk/api/rest/CorpChatbotInstallRequest.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/sendDingTalk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_case.py" />
+    <entry file="file://$PROJECT_DIR$/tests/DingTalk/top/api/rest/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/tests/DingTalk/test.py" />
+    <entry file="file://$PROJECT_DIR$/tests/DingTalk/aliyun_demo.py" />
+    <entry file="file://$PROJECT_DIR$/tests/DingTalk/dingtalk/api/rest/CorpChatbotInstallRequest.py" />
+    <entry file="file://$PROJECT_DIR$/tests/sendDingTalk.py" />
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/core/testRunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding>
-            <element signature="e#258#267#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -796,10 +727,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
+    <entry file="file://$PROJECT_DIR$/mkdocs.yml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/img/1615966527547.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport.egg-info/PKG-INFO">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7050" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport.egg-info/requires.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/mkdocs.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ptest_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/core/testRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="137" column="11" lean-forward="true" selection-start-line="137" selection-start-column="11" selection-end-line="137" selection-end-column="11" />
+          <folding>
+            <element signature="e#5497#6087#0" />
+            <element signature="e#6128#6794#0" />
+            <element signature="e#6913#7978#0" />
+            <element signature="e#8074#8755#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="388">
+            <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/doc1_index1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

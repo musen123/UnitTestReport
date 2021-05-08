@@ -134,23 +134,26 @@ class TestRunner():
         res_text = env.get_template('dingtalk.md').render(self.test_result)
         return res_text
 
-    def run(self, thread_count=1):
+    def run(self, thread_count=1,count=0, interval=2):
         """
         支持多线程执行
         注意点：如果多个测试类共用某一个全局变量，由于资源竞争可能会出现错误
         :param thread_count:线程数量，默认位1
+        :param count: 重跑次数，默认为0
+        :param interval: 重跑时间间隔，默认为2
         :return:测试运行结果
         """
         # 将测试套件按照用例类进行拆分
         suites = self.__classification_suite()
         with ThreadPoolExecutor(max_workers=thread_count) as ts:
             for i in suites:
-                res = TestResult()
+                # res = TestResult()
+                res = ReRunResult(count=count, interval=interval)
                 self.result.append(res)
                 ts.submit(i.run, result=res).add_done_callback(res.stopTestRun)
             ts.shutdown(wait=True)
-        res = self.__get_reports()
-        return res
+        result = self.__get_reports()
+        return result
 
     def rerun_run(self, count=0, interval=2):
         """
