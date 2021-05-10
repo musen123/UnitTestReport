@@ -20,15 +20,14 @@ from email.mime.multipart import MIMEMultipart
 
 
 class SendEmail:
-    """发送邮件"""
+    """Send mail"""
 
     def __init__(self, host, user, password, port=465):
         """
-        初始化设置
-        :param host: smtp服务器地址（qq邮箱：smtp.qq.com，163邮箱：smtp.163.com"）
-        :param port: smtp服务器端口：
-        :param user: 邮箱账号
-        :param password: 邮箱的smtp服务授权码
+        :param host: smtp server address
+        :param port: smtp server report
+        :param user: Email account number
+        :param password: SMTP service authorization code of mailbox
         """
         if port == 465 or port == 587:
             self.smtp = smtplib.SMTP_SSL(host=host, port=port)
@@ -37,17 +36,15 @@ class SendEmail:
         self.smtp.login(user=user, password=password)
         self.user = user
 
-    def send_email(self, subject="测试报告", content=None, filename=None, to_addrs=None):
+    def send_email(self, subject="test report", content=None, filename=None, to_addrs=None):
         """
-        发送邮件
-        :param subject: 邮件主题
-        :param content: 邮件内容
-        :param filename: 报告文件的完整路径
-        :param to_addrs: 收件人地址
+        :param subject:Email subject
+        :param content: Email content
+        :param filename: Attachment document
+        :param to_addrs: Addressee's address
         :type to_addrs: str or list
         :return:
         """
-        print("--------准备发送测试报告---------")
         msg = MIMEMultipart()
         msg["Subject"] = subject
         msg["From"] = self.user
@@ -57,10 +54,8 @@ class SendEmail:
             msg["To"] = to_addrs[0]
         if not content:
             content = time.strftime("%Y-%m-%d-%H_%M_%S") + ":测试报告"
-        # 构建邮件的文本内容
         text = MIMEText(content, _subtype="html", _charset="utf8")
         msg.attach(text)
-        # 判断是否要发送附件
         if filename and os.path.isfile(filename):
             with open(filename, "rb") as f:
                 content = f.read()
@@ -71,32 +66,30 @@ class SendEmail:
             name = os.path.split(filename)[1]
             report.add_header('content-disposition', 'attachment', filename=name)
             msg.attach(report)
-        # 第三步：发送邮件
         try:
             self.smtp.send_message(msg, from_addr=self.user, to_addrs=to_addrs)
         except Exception as e:
-            print("--------测试报告发送失败------")
+            print("Failed to send test report")
             raise e
         else:
-            print("--------测试报告发送完毕------")
+            print("The test report has been sent")
 
 
 class DingTalk:
-    """发生钉钉群通知"""
+    """Nail group notification occurred"""
 
     def __init__(self, url, data, secret=None):
         """
-        初始化机器人对象
-        :param url:钉钉机器人webhook地址
-        :param data:发送的消息（参照钉钉官方的消息类型）
-        :param secret: (非必填)如果机器人安全设置了加签，则需要传入加签的秘钥
+        :param url: Dingtalk robot webhook address
+        :param data:Message sent (refer to the official message type)
+        :param secret: (not required) if the robot has set the signature security, it needs to pass in the signature key
         """
         self.url = url
         self.data = data
         self.secret = secret
 
     def get_stamp(self):
-        """加签"""
+        """Countersign"""
         timestamp = str(round(time.time() * 1000))
         secret_enc = self.secret.encode('utf-8')
         string_to_sign = '{}\n{}'.format(timestamp, self.secret)
@@ -106,27 +99,25 @@ class DingTalk:
         return {"sign": sign, "timestamp": timestamp}
 
     def send_info(self):
-        """发送消息"""
-        # 判断是否需要加签
+        """send info"""
         if self.secret:
             params = self.get_stamp()
         else:
             params = None
-        # 发送请求
         response = requests.post(url=self.url, json=self.data, params=params)
         return response
 
 
 class WeiXin:
     """
-    企业微信群通知
+    Enterprise wechat group notice
     """
     base_url = "https://qyapi.weixin.qq.com/cgi-bin/appchat/send?access_token="
 
     def __init__(self, access_token=None, corpid=None, corpsecret=None):
         """
-        :param corpid:企业ID，
-        :param corpsecret:应用的凭证密钥
+        :param corpid:wechat corpid
+        :param corpsecret:Applied credential key
         """
         self.corpid = corpid
         self.corpsecret = corpsecret
@@ -135,10 +126,10 @@ class WeiXin:
         elif corpid and corpsecret:
             self.access_token = self.get_access_token()
         else:
-            raise ValueError("access_token和【corpid,corpsecret】不能都为空，至少要传入一种")
+            raise ValueError("access_token and [corpid, corpsecret] cannot both be empty. At least one of them must be passed in")
 
     def get_access_token(self):
-        """获取access_token"""
+        """get access_token"""
         url = "https://qyapi.weixin.qq.com/cgi-bin/gettoken"
         params = {
             "corpid": self.corpid,
@@ -150,7 +141,7 @@ class WeiXin:
         return result["access_token"]
 
     def send_info(self, data):
-        """发送消息"""
+        """send info"""
         url = self.base_url + self.access_token
         response = requests.post(url=url, data=data)
         return response

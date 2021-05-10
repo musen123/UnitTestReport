@@ -30,9 +30,7 @@ def ddt(cls):
     for name, func in list(cls.__dict__.items()):
         if hasattr(func, "PARAMS"):
             for index, case_data in enumerate(getattr(func, "PARAMS")):
-                # 生成用例名称，
                 new_test_name = _create_test_name(index, name)
-                # 生成用例描述
                 if isinstance(case_data, dict) and case_data.get("title"):
                     test_desc = case_data.get("title")
                 elif isinstance(case_data, dict) and case_data.get("desc"):

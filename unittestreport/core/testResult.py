@@ -12,11 +12,12 @@ import unittest
 import sys
 import time
 from io import StringIO
+
 origin_stdout = sys.stdout
 
 
 def output2console(s):
-    """将stdout内容输出到console"""
+    """Output stdout content to console"""
     tmp_stdout = sys.stdout
     sys.stdout = origin_stdout
     print(s, end='')
@@ -31,7 +32,6 @@ class OutputRedirector(object):
 
     def write(self, s):
         self.fp.write(s)
-        # output2console(s)
         origin_stdout.write(str(s))
 
     def writelines(self, lines):
@@ -46,7 +46,6 @@ stderr_redirector = OutputRedirector(sys.stderr)
 
 
 class TestResult(unittest.TestResult):
-    """ 测试结果记录"""
     def __init__(self):
         super().__init__()
 
@@ -65,10 +64,6 @@ class TestResult(unittest.TestResult):
         self.outputBuffer = None
 
     def startTest(self, test):
-        """
-        当测试用例测试即将运行时调用
-        :return:
-        """
         super().startTest(test)
         self.start_time = time.time()
         self.outputBuffer = StringIO()
@@ -88,26 +83,15 @@ class TestResult(unittest.TestResult):
         return self.outputBuffer.getvalue()
 
     def stopTest(self, test):
-        """
-        当测试用列执行完成后进行调用
-        :return:
-        """
-        # 获取用例的执行时间
         test.run_time = '{:.3}s'.format((time.time() - self.start_time))
         test.class_name = test.__class__.__qualname__
         test.method_name = test.__dict__['_testMethodName']
         test.method_doc = test.shortDescription()
         self.fields['results'].append(test)
         self.fields["testClass"].add(test.class_name)
-
         self.complete_output()
 
     def stopTestRun(self, title=None):
-        """
-        测试用例执行完手动调用统计测试结果的相关数据
-        :param title:
-        :return:
-        """
         self.fields['fail'] = len(self.failures)
         self.fields['error'] = len(self.errors)
         self.fields['skip'] = len(self.skipped)
@@ -116,7 +100,6 @@ class TestResult(unittest.TestResult):
         self.fields['testClass'] = list(self.fields['testClass'])
 
     def addSuccess(self, test):
-        """用例执行通过，成功数量+1"""
         self.fields["success"] += 1
         test.state = '成功'
         sys.stdout.write("{}执行——>【通过】\n".format(test))
@@ -126,28 +109,16 @@ class TestResult(unittest.TestResult):
         test.run_info = logs
 
     def addFailure(self, test, err):
-        """
-        :param test: 测试用例
-        :param err:  错误信息
-        :return:
-        """
         super().addFailure(test, err)
         logs = []
         test.state = '失败'
         sys.stderr.write("{}执行——>【失败】\n".format(test))
-        # 保存错误信息
         output = self.complete_output()
         logs.append(output)
         logs.extend(traceback.format_exception(*err))
         test.run_info = logs
 
     def addSkip(self, test, reason):
-        """
-        修改跳过用例的状态
-        :param test:测试用例
-        :param reason: 相关信息
-        :return: None
-        """
         super().addSkip(test, reason)
         test.state = '跳过'
         sys.stdout.write("{}执行--【跳过Skip】\n".format(test))
@@ -155,12 +126,6 @@ class TestResult(unittest.TestResult):
         test.run_info = logs
 
     def addError(self, test, err):
-        """
-        修改错误用例的状态
-        :param test: 测试用例
-        :param err:错误信息
-        :return:
-        """
         super().addError(test, err)
         test.state = '错误'
         sys.stderr.write("{}执行——>【错误Error】\n".format(test))
@@ -198,11 +163,6 @@ class ReRunResult(TestResult):
             super().stopTest(test)
 
     def addFailure(self, test, err):
-        """
-        :param test: 测试用例
-        :param err:  错误信息
-        :return:
-        """
         if not hasattr(test, 'count'):
             test.count = 0
         if test.count < self.count:
@@ -219,14 +179,7 @@ class ReRunResult(TestResult):
             if test.count != 0:
                 sys.stderr.write("================重运行{}次完毕================\n".format(test.count))
 
-
     def addError(self, test, err):
-        """
-        修改错误用例的状态
-        :param test: 测试用例
-        :param err:错误信息
-        :return:
-        """
         if not hasattr(test, 'count'):
             test.count = 0
         if test.count < self.count:
@@ -241,5 +194,3 @@ class ReRunResult(TestResult):
             super().addError(test, err)
             if test.count != 0:
                 sys.stderr.write("================重运行{}次完毕================\n".format(test.count))
-
-

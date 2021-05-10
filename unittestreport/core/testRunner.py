@@ -21,27 +21,25 @@ Load = unittest.defaultTestLoader
 
 
 class TestRunner():
-    """unittest运行程序"""
 
     def __init__(self, suite: unittest.TestSuite,
                  filename="report.html",
                  report_dir=".",
                  title='测试报告',
-                 tester='木森',
+                 tester='测试员',
                  desc="XX项目测试生成的报告",
                  templates=1
                  ):
         """
-        初始化用例运行程序
-        :param suites: 测试套件
-        :param filename: 报告文件名
-        :param report_dir:报告文件的路径
-        :param title:测试套件标题
-        :param templates: 可以通过参数值1或者2，指定报告的样式模板，目前只有两个模板
-        :param tester:测试者
+        :param suites: test suite
+        :param filename: Report file name
+        :param report_dir:The path to the report file
+        :param title:Test suite title
+        :param templates: You can specify the style template for the report by parameter value 1 or 2. Currently, there are only two templates
+        :param tester:Tester
         """
         if not isinstance(suite, unittest.TestSuite):
-            raise TypeError("suites 不是测试套件")
+            raise TypeError("Parameter suite is not a test suite")
         if not isinstance(filename, str):
             raise TypeError("filename is not str")
         if not filename.endswith(".html"):
@@ -57,10 +55,6 @@ class TestRunner():
         self.starttime = time.time()
 
     def __classification_suite(self):
-        """
-        将测试套件中的用例，根据用例类位单位，拆分成多个测试套件，打包成列表类型
-        :return: list-->[suite,suite,suite.....]
-        """
         suites_list = []
 
         def wrapper(suite):
@@ -75,12 +69,7 @@ class TestRunner():
         return suites_list
 
     def __get_reports(self):
-        """
-        生成报告,返回测试汇中的结果
-        :return: 包含测试结果的字典
-        """
         print("所有用例执行完毕，正在生成测试报告中......")
-        # 汇总测试结果
         test_result = {
             "success": 0,
             "all": 0,
@@ -90,7 +79,6 @@ class TestRunner():
             "results": [],
             "testClass": [],
         }
-        # 整合测试结果
         for res in self.result:
             for item in test_result:
                 test_result[item] += res.fields[item]
@@ -104,8 +92,6 @@ class TestRunner():
             test_result['pass_rate'] = '{:.2f}'.format(test_result['success'] / test_result['all'] * 100)
         else:
             test_result['pass_rate'] = 0
-
-        # 获取报告模板
         template_path = os.path.join(os.path.dirname(__file__), '../templates')
         env = Environment(loader=FileSystemLoader(template_path))
         if self.templates == 2:
@@ -115,9 +101,7 @@ class TestRunner():
         else:
             template = env.get_template('templates.html')
         file_path = os.path.join(self.report_dir, self.filename)
-        # 渲染报告模板
         res = template.render(test_result)
-        # 输出报告到文件
         with open(file_path, 'wb') as f:
             f.write(res.encode('utf8'))
         print("测试报告已经生成，报告路径为:{}".format(file_path))
@@ -134,16 +118,15 @@ class TestRunner():
         res_text = env.get_template('dingtalk.md').render(self.test_result)
         return res_text
 
-    def run(self, thread_count=1,count=0, interval=2):
+    def run(self, thread_count=1, count=0, interval=2):
         """
-        支持多线程执行
-        注意点：如果多个测试类共用某一个全局变量，由于资源竞争可能会出现错误
-        :param thread_count:线程数量，默认位1
-        :param count: 重跑次数，默认为0
-        :param interval: 重跑时间间隔，默认为2
-        :return:测试运行结果
+        The entrance to running tests
+        Note: if multiple test classes share a global variable, errors may occur due to resource competition
+        :param thread_count:Number of threads. default 1
+        :param count: Rerun times,  default 0
+        :param interval: Rerun interval, default 2
+        :return: Test run results
         """
-        # 将测试套件按照用例类进行拆分
         suites = self.__classification_suite()
         with ThreadPoolExecutor(max_workers=thread_count) as ts:
             for i in suites:
@@ -157,10 +140,10 @@ class TestRunner():
 
     def rerun_run(self, count=0, interval=2):
         """
-        测试用例失败、错误重跑机制
-        :param count: 重跑次数，默认为0
-        :param interval: 重跑时间间隔，默认为2
-        :return: 测试运行结果
+        Test case failure and error rerun mechanism
+        :param count: Rerun times,  default 0
+        :param interval: Rerun interval, default 2
+        :return: Test run results
         """
         res = ReRunResult(count=count, interval=interval)
         self.result.append(res)
@@ -171,14 +154,14 @@ class TestRunner():
         res = self.__get_reports()
         return res
 
-    def send_email(self, host, port, user, password, to_addrs, is_file=True):
+    def send_email(self, host: str, port: int, user: str, password: str, to_addrs, is_file=True):
         """
-        发生报告为附件到邮箱
-        :param host: str类型，(smtp服务器地址)
-        :param port: int类型，(smtp服务器地址端口)
-        :param user: str类型，(邮箱账号)
-        :param password: str类型（邮箱密码）
-        :param to_addrs: str(单个收件人) or list(多个收件人)收件人列表，
+        The occurrence report is attached to the mailbox
+        :param host: SMTP server address
+        :param port: SMTP server port
+        :param user: Email account number
+        :param password: SMTP service authorization code of mailbox
+        :param to_addrs: Addressee's address str or list
         :return:
         """
         sm = SendEmail(host=host, port=port, user=user, password=password)
@@ -191,10 +174,7 @@ class TestRunner():
         sm.send_email(subject=self.title, content=content, filename=filename, to_addrs=to_addrs)
 
     def get_except_info(self):
-        """
-        获取错误用例和失败用例的报错信息
-        :return:
-        """
+        """Get error reporting information for error cases and failure cases"""
         except_info = []
         num = 0
         for i in self.result:
@@ -213,7 +193,6 @@ class TestRunner():
 
     def dingtalk_notice(self, url, key=None, secret=None, atMobiles=None, isatall=False, except_info=False):
         """
-        钉钉通知
         :param url: 钉钉机器人的Webhook地址
         :param key: （非必传：str类型）如果钉钉机器人安全设置了关键字，则需要传入对应的关键字
         :param secret:（非必传:str类型）如果钉钉机器人安全设置了签名，则需要传入对应的密钥
