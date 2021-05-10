@@ -5,7 +5,7 @@
 关于数据驱动这边就不给大家做过多的介绍了，数据驱动的目的是将测试数据和用例逻辑进行分离，提高代码的重用率，以及用例的维护，关于数据驱动本，unittestreport.dataDriver模块中实现了三个使用方法，支持使用列表(可迭代对象)、json文件、yaml文件来生成测试用例，接来分别给大家介绍一下使用方法：
 
 ```
-from unittestreport.dataDriver import ddt, list_data,json_data,yaml_data
+from unittestreport import ddt, list_data,json_data,yaml_data
 ```
 
 - **第一步：使用ddt装饰测试用例类**
