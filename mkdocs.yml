@@ -1,6 +1,6 @@
 site_name: unittestreport 使用文档
 nav:
-  - 一、安装和介绍: doc1_info.md
+  - 一、安装和介绍: index.md
   - 二、HTML测试报告生成: doc2_report.md
   - 三、测试用例失败重运行: doc3_rerun.md
   - 四、邮件发送测试报告: doc4_email.md
@@ -8,6 +8,7 @@ nav:
   - 六、推送测试结果到钉钉: doc6_dingding.md
   - 七、推送测试结果到企业微信: doc7_webchat.md
   - 八、并发执行用例: doc8_thread.md
+  - 九、pytest的支持: doc9_pytest.md
 
 theme: readthedocs
 

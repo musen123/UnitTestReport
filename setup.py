@@ -22,7 +22,7 @@ setup(
     install_requires=["Jinja2==2.10.1", "PyYAML==5.3.1","requests==2.24.0"],
     packages=find_packages(),
     package_data={
-        "": ["*.html"],
+        "": ["*.html",'*.md'],
     },
     python_requires='>=3.6',
     classifiers=[

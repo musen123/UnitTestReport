@@ -23,3 +23,12 @@ unittestreport是基于python3.6开发的，安装前请确认你的python版本
 - **安装命令**
 
     `pip install unittestreport`
+
+
+## 3、pytest的支持
+
+之前有小伙伴反馈，能不能让unittestreport支持pytest生成报告，所以就加上了这个功能。pytest生成unittestreport风格的报告，安装如下插件即可,详细教程见【第九节】
+
+- **pytest插件安装命令**
+
+    `pip install pytest-testreport`
