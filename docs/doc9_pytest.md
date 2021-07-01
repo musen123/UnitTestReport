@@ -20,35 +20,34 @@ pytest-testreport是基于python3.6开发的，安装前请确认你的python版
 ### 3、使用方式：
 
 
-###### 注意点：如果安装了pytest-html这个插件，请先卸载，不然会有冲突
+注意点：如果安装了pytest-html这个插件，请先卸载，不然会有冲突
 
-##### 使用案例：
 
-- ###### 命令行执行： pytest 运行测试时加上参数--report 指定报告文件名
+*命令行执行* 
+    pytest 运行测试时加上参数--report 指定报告文件名
 
-    ```shell
-    # 指定报告文件名
+    指定报告文件名
     pytest --report=musen.html
     
-    #其他配置参数
+    其他配置参数
     --title=指定报告标题
     --tester=指定报告中的测试者
     --desc = 指定报告中的项目描述
     
-    # 同时使用多个参数
+    同时使用多个参数
     pytest --report=musen.html --title=测试报告 --tester=测试菜鸟 --desc=项目描述
-    ```
     
-- ###### pytest.main执行
+    
+*pytest.main执行*
 
-    ```shell
+    
     import pytest
     
     pytest.main(['--report=musen.html',
                  '--title=测试报告标题',
                  '--tester=木森',
                  '--desc=报告描述信息'])
-    ```
+    
 
 
 
