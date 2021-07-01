@@ -24,9 +24,10 @@ pytest-testreport是基于python3.6开发的，安装前请确认你的python版
 
 
 *命令行执行* 
-    pytest 运行测试时加上参数--report 指定报告文件名
+    
 
-    指定报告文件名
+    运行测试时加上参数--report 指定报告文件名
+    
     pytest --report=musen.html
     
     其他配置参数
