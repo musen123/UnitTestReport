@@ -1,3 +1,6 @@
+LICENSE
+MANIFEST.in
+README.md
 setup.py
 unittestreport/__init__.py
 unittestreport.egg-info/PKG-INFO
@@ -14,6 +17,7 @@ unittestreport/core/sendEmail.py
 unittestreport/core/testResult.py
 unittestreport/core/testRunner.py
 unittestreport/templates/__init__.py
+unittestreport/templates/dingtalk.md
 unittestreport/templates/templates.html
 unittestreport/templates/templates02.html
 unittestreport/templates/templates03.html

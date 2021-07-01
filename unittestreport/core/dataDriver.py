@@ -13,7 +13,7 @@ def _create_test_name(index, name):
 
 def _update_func(new_func_name, params, test_desc, func, *args, **kwargs):
     @wraps(func)
-    def wrapper(self, ):
+    def wrapper(self):
         return func(self, params, *args, **kwargs)
 
     wrapper.__wrapped__ = func
@@ -32,13 +32,14 @@ def ddt(cls):
             for index, case_data in enumerate(getattr(func, "PARAMS")):
                 new_test_name = _create_test_name(index, name)
                 if isinstance(case_data, dict) and case_data.get("title"):
-                    test_desc = case_data.get("title")
+                    test_desc = str(case_data.get("title"))
                 elif isinstance(case_data, dict) and case_data.get("desc"):
-                    test_desc = case_data.get("desc")
-                elif hasattr(case_data, 'title'):
-                    test_desc = case_data.title
+                    test_desc = str(case_data.get("desc"))
+                elif (not isinstance(case_data, str)) and hasattr(case_data, 'title'):
+                    test_desc = str(case_data.title)
                 else:
                     test_desc = func.__doc__
+
                 func2 = _update_func(new_test_name, case_data, test_desc, func)
                 setattr(cls, new_test_name, func2)
             else:
