@@ -2,7 +2,6 @@ from functools import wraps
 import json
 import yaml
 
-
 def _create_test_name(index, name):
     if index + 1 < 10:
         test_name = name + "_0" + str(index + 1)

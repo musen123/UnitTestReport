@@ -120,6 +120,8 @@
             white-space: -moz-pre-wrap;
             white-space: -o-pre-wrap;
             word-wrap: break-word;
+            line-height: 22px;
+            font-size: 14px
         }
 
         /*    测试图表显示*/
@@ -174,11 +176,11 @@
                 <span class="text-success">{{ success }}</span>
             </li>
             <li class="list-group-item">
-                <button type="button" class="btn btn-danger">失败用例</button>
+                <button type="button" class="btn btn-warning">失败用例</button>
                 <span class="text-warning">{{ fail }}</span>
             </li>
             <li class="list-group-item">
-                <button type="button" class="btn btn-warning">错误用例</button>
+                <button type="button" class="btn btn-danger">错误用例</button>
                 <span class="text-danger">{{ error }}</span>
             </li>
             <li class="list-group-item">
@@ -236,8 +238,8 @@
                     <select id="testResult">
                         <option>所有</option>
                         <option class="text-success">成功</option>
-                        <option class="text-danger">失败</option>
-                        <option class="text-warning">错误</option>
+                        <option class="text-warning">失败</option>
+                        <option class="text-danger">错误</option>
                         <option class="text-info">跳过</option>
                     </select>
 
@@ -256,9 +258,9 @@
                     {% if foo.state == '成功' %}
                         <td class="text-success">{{ foo.state }}</td>
                     {% elif foo.state == '失败' %}
-                        <td class="text-danger">{{ foo.state }}</td>
-                    {% elif foo.state == '错误' %}
                         <td class="text-warning">{{ foo.state }}</td>
+                    {% elif foo.state == '错误' %}
+                        <td class="text-danger">{{ foo.state }}</td>
                     {% else %}
                         <td class="text-info">{{ foo.state }}</td>
                     {% endif %}
@@ -327,11 +329,11 @@
 
             } else if (res === '失败') {
                 tbodyTr.hide();
-                tbodyTr.has('button').has('.text-danger').show()
+                tbodyTr.has('button').has('.text-warning').show()
 
             } else if (res === '错误') {
                 tbodyTr.hide();
-                tbodyTr.has('button').has('.text-warning').show()
+                tbodyTr.has('button').has('.text-danger').show()
 
             } else if (res === '跳过') {
                 tbodyTr.hide();
@@ -346,10 +348,10 @@
                 tbodyTr.has('button').has('.' + cls + '').has('.text-success').show()
             } else if (res === '失败') {
                 tbodyTr.hide();
-                tbodyTr.has('button').has('.' + cls + '').has('.text-danger').show()
+                tbodyTr.has('button').has('.' + cls + '').has('.text-warning').show()
             } else if (res === '错误') {
                 tbodyTr.hide();
-                tbodyTr.has('button').has('.' + cls + '').has('.text-warning').show()
+                tbodyTr.has('button').has('.' + cls + '').has('.text-danger').show()
             } else if (res === '跳过') {
                 tbodyTr.hide();
                 tbodyTr.has('button').has('.' + cls + '').has('.text-info').show()

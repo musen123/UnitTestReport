@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--    页面样式-->
+    <style type="text/css">
+        /*标题样式*/
+
+        .main {
+            background: rgba(7, 10, 88, 0.99);
+        }
+
+        .title {
+            width: auto;
+            height: 80px;
+            text-align: center;
+            font: bolder 30px/80px "Microsoft YaHei UI";
+            color: #fff;
+            background: rgba(3, 14, 70, 0.5);
+            border-bottom: solid 1px rgb(3, 14, 70);
+            margin-bottom: 10px;
+        }
+
+        .content-box {
+            height: 700px;
+            width: 100%;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .box1 {
+            flex: 3;
+        }
+
+        .box2 {
+            flex: 5;
+            margin: 0 10px;
+        }
+
+        .box3 {
+            flex: 4;
+        }
+
+        .panel {
+            position: relative;
+            border: 1px solid rgba(25, 186, 139, 0.17);
+            background: rgba(3, 14, 70, 0.5);
+            padding: 0 10px 50px;
+            margin-bottom: 10px;
+        }
+
+        .panel h2, .test_info h2 {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #007bff;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .panel .chart {
+            height: 250px;
+        }
+
+        .panel .chart2 {
+            height: 350px;
+        }
+
+        .panel .desc {
+            height: 150px;
+        }
+
+        .panel .desc .info {
+            font: normal 18px/25px "Microsoft YaHei UI";
+            color: #fff;
+            display: flex;
+        }
+
+        .panel .desc .info div {
+            padding: 10px;
+            border: solid 1px #6c757d;
+        }
+
+        .panel .desc .info div span {
+            margin-left: 20px;
+        }
+
+
+        /* 执行信息样式   */
+        .test_info {
+            width: 100%;
+            padding: 20px 100px;
+            background: rgba(3, 14, 70, 0.5);
+
+        }
+
+        .table td, .table th {
+            border: solid 1px #5765a4 !important;
+            padding: 0 !important;
+            line-height: 40px;
+            text-align: center;
+            height: 40px;
+            color: #fff;
+        }
+
+        select {
+            border: 0;
+            padding: 0;
+            margin: 0;
+            height: 2em;
+            width: 8em;
+            margin-left: 2em;
+        }
+
+        option {
+            text-align: center;
+            height: 36px;
+            font: none 18px/36px "Microsoft YaHei UI";
+            color: #28a745 !important;
+        }
+
+        .test_log {
+            background: rgba(163, 171, 189, 0.15);
+            width: 100%;
+            height: 50px;
+            border-top: none;
+            border-bottom: none;
+            display: none;
+            text-align: left;
+        }
+
+        .test_log td {
+            text-align: left;
+            height: 30px;
+            margin: 0;
+            padding-left: 3em;
+            padding-right: 3em;
+            font: none 18px/24px "Microsoft YaHei UI";
+        }
+
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+            color: #fff;
+            line-height: 22px;
+            font-size: 14px
+        }
+
+        .chart4 {
+            overflow: auto;
+            width: 100%;
+            height: 600px;
+
+        }
+
+        .chart4::-webkit-scrollbar {
+            width: 10px;
+
+        }
+
+        .chart4::-webkit-scrollbar-thumb {
+            /*滚动条里面小方块*/
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px rgba(4, 0, 225, 0.62);
+            background: #272789;
+            height: 10px;
+
+        }
+
+        .chart4::-webkit-scrollbar-track {
+            /*滚动条里面轨道*/
+            -webkit-box-shadow: inset 0 0 5px rgba(0, 21, 255, 0.54);
+            border-radius: 10px;
+            background: rgba(214, 214, 214, 0.64);
+
+        }
+
+        /*详细内容描述的小标题*/
+        .table_title {
+            text-align: center;
+            background: rgba(1, 2, 37, 0.72);
+            font: bold 18px/30px 'Microsoft YaHei UI';
+            color: #fff;
+            border-radius: 10px
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="main">
+    <div class="title">
+        {{ title }}
+    </div>
+    <div class="content-box">
+        <div class="box1">
+            <div class="panel">
+                <h2>执行结果</h2>
+                <div class="chart" id="char3"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel ">
+                <h2>成功占比</h2>
+                <div class="chart" id="char1"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="panel">
+                <h2>运行信息</h2>
+                <div class="desc">
+
+                    <div class="info">
+                        <div style="flex:5">
+                            <button type="button" class="btn btn-primary btn-sm">开始时间</button>
+                            <span>{{ begin_time }}</span>
+                        </div>
+                        <div style="flex:5">
+                            <button type="button" class="btn btn-primary btn-sm">用例总数</button>
+                            <span>{{ all }}</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div style="flex:5">
+                            <button type="button" class="btn btn-primary btn-sm">运行时长</button>
+                            <span>{{ runtime }}</span>
+                        </div>
+                        <div style="flex:5">
+                            <button type="button" class="btn btn-primary btn-sm ">测试人员</button>
+                            <span>{{ tester }}</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div style="flex:5">
+                            <button type="button" class="btn btn-primary btn-sm">成功用例</button>
+                            <span>{{ success }}</span>
+                        </div>
+                        <div style="flex:5">
+                            <button type="button" class="btn btn-primary btn-sm ">通过率</button>
+                            <span>{{pass_rate}}%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <h2>通过率趋势图</h2>
+                <div class="chart2" id="char2"></div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="panel">
+                <h2>历史构建结果</h2>
+                <div class="chart4">
+                    <table class="table" style="color: #d6d6d6;padding: 0">
+                        <thead>
+                        <tr>
+                            <th scope="col">执行时间</th>
+                            <th scope="col">用例总数</th>
+                            <th scope="col">成功用例数</th>
+                            <th scope="col">通过率</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for hos in history %}
+                        <tr>
+                            <th scope="row">{{hos.begin_time}}</th>
+                            <td>{{hos.all}}</td>
+                            <td>{{hos.success}}</td>
+                            <td>{{hos.pass_rate}}%</td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="test_info">
+        <h2>本次运行详情</h2>
+        <div class="table_data">
+
+            <table class="table" style="color: #fff">
+                <thead class="text-light" style="background: rgba(3, 14, 70, 0.5)">
+                <tr>
+                    <th scope="col" style="width: 5%;padding: 0">编号</th>
+                    <th scope="col" style="width: 20%;padding: 0">
+                        <span>测试类</span>
+                        <select id="testClass">
+                            <option>所有</option>
+                            {% for foo in testClass %}
+                            <option>{{ foo }}</option>
+                            {% endfor %}
+                        </select>
+
+                    </th>
+                    <th scope="col" style="width: 15%;padding: 0">测试方法</th>
+                    <th scope="col" style="width: 20%;padding: 0">用例描述</th>
+                    <th scope="col" style="width: 10%;padding: 0">执行时间</th>
+                    <th scope="col" style="width: 20%;padding: 0">
+
+                        <span>执行结果</span>
+                        <select id="testResult">
+                            <option>所有</option>
+                            <option class="text-success">成功</option>
+                            <option class="text-danger">失败</option>
+                            <option class="text-warning">错误</option>
+                            <option class="text-info">跳过</option>
+                        </select>
+
+                    </th>
+                    <th scope="col" style="width: 10%;padding: 0">详细信息</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for foo in results %}
+                <tr class="case_">
+                    <td>{{ loop.index }}</td>
+                    <td class="{{ foo.class_name }}">{{ foo.class_name }}</td>
+                    <td>{{ foo.method_name }}</td>
+                    <td>{{ foo.method_doc }}</td>
+                    <td>{{ foo.run_time }}</td>
+                    {% if foo.state == '成功' %}
+                    <td class="text-success">{{ foo.state }}</td>
+                    {% elif foo.state == '失败' %}
+                    <td class="text-warning">{{ foo.state }}</td>
+                    {% elif foo.state == '错误' %}
+                    <td class="text-danger">{{ foo.state }}</td>
+                    {% else %}
+                    <td class="text-info">{{ foo.state }}</td>
+                    {% endif %}
+                    <td>
+                        <button type="button" class="btn btn_info btn-primary btn-sm">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                     <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                        {% for item in foo.run_info %}
+
+                            <pre>{{ item }}</pre>
+                        {% endfor %}
+                        {% if foo.run_info == [] %}
+                            <pre>无内容输出！</pre>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        <div style="height: 200px"></div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></script>
+
+
+<script type="text/javascript">
+
+    const resulte = {
+            "success": `{{success}}`,
+            "all": `{{all}}`,
+            "fail": `{{fail}}`,
+            "skip": '{{skip}}',
+            "error": `{{error}}`,
+            "runtime": '{{runtime}}',
+            "begin_time": "{{runtime}}",
+            "pass_rate": '{{pass_rate}}',
+        }
+    ;
+    const history = {{history}};
+
+    var passRate = [];
+    var dTime = [];
+    history.forEach(function (item, index, array) {
+        passRate.push(item.pass_rate);
+        dTime.push(item.begin_time)
+    });
+    if (passRate.length === 1) {
+        passRate.unshift(0);
+        dTime.unshift(0)
+    }
+
+    function char01() {
+        let myChart = echarts.init(document.getElementById('char1'));
+        let option = {
+            color: ['#00a10a', '#ddb518', 'rgba(204,46,41,0.73)', '#85898c'],
+            tooltip: {
+                trigger: 'item',
+                formatter: '{a} <br/>{b}: {c} ({d}%)',
+                backgroundColor: 'rgba(3, 14, 70, 0.5)',
+                borderColor: '#333',
+                textStyle: {
+                    color: '#fff',
+                    fontSize: "13"
+                },
+            },
+            legend: {
+                bottom: "0%",
+                // 小图标的宽度和高度
+                itemWidth: 10,
+                itemHeight: 10,
+                data: ['通过', '失败', '错误', '跳过'],
+                textStyle: {
+                    color: "rgba(255,255,255,.5)",
+                    fontSize: "12"
+                },
+            },
+            series: [
+                {
+                    name: '测试结果',
+                    type: 'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: '20',
+                            fontWeight: 'bold',
+                            color: '#fff',
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: [
+                        {value: resulte.success, name: '通过'},
+                        {value: resulte.fail, name: '失败'},
+                        {value: resulte.error, name: '错误'},
+                        {value: resulte.skip, name: '跳过'}
+                    ]
+                }
+            ]
+        };
+        myChart.setOption(option)
+
+    }
+
+    char01();
+
+    //    大图
+    function char02() {
+
+        // 基于准备好的dom，初始化echarts实例
+        let myChart = echarts.init(document.getElementById("char2"));
+        // 2. 指定配置和数据
+        option = {
+            tooltip: {
+                trigger: 'axis',
+                formatter: '{a} <br/>{b}:  ({c}%)',
+                backgroundColor: 'rgba(3, 14, 70, 0.5)',
+                borderColor: '#333',
+                textStyle: {
+                    color: '#fff',
+                    fontSize: "13"
+                },
+            },
+
+            grid: {
+                left: "10",
+                top: "30",
+                right: "10",
+                bottom: "0",
+                containLabel: true
+            },
+
+            xAxis: [{
+                type: "category",
+                boundaryGap: false,
+                show: false,
+                axisLabel: {
+                    textStyle: {
+                        color: "rgba(255,255,255,.6)",
+                        fontSize: 12
+                    }
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: "rgba(255,255,255,.2)"
+                    }
+                },
+
+                data: dTime
+            },
+                {
+                    axisPointer: {
+                        show: false
+                    },
+                    axisLine: {
+                        show: false
+                    },
+                    position: "bottom",
+                    offset: 20
+                }
+            ],
+
+            yAxis: [{
+                type: "value",
+                axisTick: {
+                    show: false
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: "rgba(255,255,255,.1)"
+                    }
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: "rgba(255,255,255,.6)",
+                        fontSize: 12
+                    }
+                },
+
+                splitLine: {
+                    lineStyle: {
+                        color: "rgba(255,255,255,.1)"
+                    }
+                }
+            }],
+            series: [{
+                name: "通过率",
+                type: "line",
+                smooth: true,
+                symbol: "circle",
+                symbolSize: 5,
+                showSymbol: true,
+                lineStyle: {
+                    normal: {
+                        color: "#0184d5",
+                        width: 2
+                    }
+                },
+                areaStyle: {
+                    normal: {
+                        color: new echarts.graphic.LinearGradient(
+                            0,
+                            0,
+                            0,
+                            1,
+                            [{
+                                offset: 0,
+                                color: "rgba(1, 132, 213, 0.4)"
+                            },
+                                {
+                                    offset: 0.8,
+                                    color: "rgba(1, 132, 213, 0.1)"
+                                }
+                            ],
+                            false
+                        ),
+                        shadowColor: "rgba(0, 0, 0, 0.1)"
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        color: "#0184d5",
+                        borderColor: "rgba(221, 220, 107, .1)",
+                        borderWidth: 18
+                    }
+                },
+                data: passRate
+            },
+            ]
+        };
+        // 重新把配置好的新数据给实例对象
+        myChart.setOption(option);
+
+    }
+
+    char02();
+
+    function char03() {
+        // 基于准备好的dom，初始化echarts实例
+        let myChart = echarts.init(document.getElementById("char3"));
+        var data = [resulte.success, resulte.fail, resulte.error, resulte.skip];
+        var titlename = ["通过用例", "失败用例", "错误用例", "跳过用例",];
+        var valdata = [resulte.all, resulte.all, resulte.all, resulte.all];
+        var myColor = ["#1089E7", "#F57474", "#56D0E3", "#F8B448"];
+        option = {
+            //图标位置
+            grid: {
+                top: "10%",
+                left: "22%",
+                bottom: "10%"
+            },
+            xAxis: {
+                show: false
+            },
+            yAxis: [{
+                show: true,
+                data: titlename,
+                inverse: true,
+                axisLine: {
+                    show: false
+                },
+                splitLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLabel: {
+                    color: "#fff",
+
+                    rich: {
+                        lg: {
+                            backgroundColor: "#339911",
+                            color: "#fff",
+                            borderRadius: 15,
+                            align: "center",
+                            width: 15,
+                            height: 15
+                        }
+                    }
+                }
+            },
+                {
+                    show: false,
+                    inverse: true,
+                    data: valdata,
+                    axisLabel: {
+                        textStyle: {
+                            fontSize: 12,
+                            color: "#fff"
+                        }
+                    },
+                    axisTick: {
+                        show: false
+                    },
+                    axisLine: {
+                        show: false
+                    },
+                }
+            ],
+            series: [{
+                type: "bar",
+                yAxisIndex: 0,
+                data: data,
+                barCategoryGap: 50,
+                barWidth: 18,
+                itemStyle: {
+                    normal: {
+                        barBorderRadius: 20,
+                        color: function (params) {
+                            var num = myColor.length;
+                            return myColor[params.dataIndex % num];
+                        }
+                    }
+                },
+                label: {
+                    normal: {
+                        show: true,
+                        position: "right",
+                        formatter: "{c}条",
+                        color:"#fff",
+
+                    }
+                }
+            },
+                {
+                    type: "bar",
+                    yAxisIndex: 1,
+                    barCategoryGap: 50,
+                    data: valdata,
+                    barWidth: 20,
+                    itemStyle: {
+                        normal: {
+                            color: "none",
+                            borderColor: "#00c1de",
+                            borderWidth: 2,
+                            barBorderRadius: 15
+                        }
+                    }
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        window.addEventListener("resize", function () {
+            myChart.resize();
+        });
+    }
+
+    char03()
+
+</script>
+
+
+<script>
+    var tbodyTr = $('tbody .case_');
+    var testResult = $("#testResult");
+    var testClass = $("#testClass");
+    <!--    用例执行详细信息显示切换-->
+    $(".btn_info").click(function () {
+        $(this).parent().parent().next().toggle();
+
+    });
+    // 当选择用例类之后触发
+    testClass.change(function () {
+        $('.test_log').hide();
+        var cls = $(this).val();
+        var res = testResult.val();
+        elementDisplay(cls, res);
+        sort()
+    });
+    testResult.change(function () {
+        var res = $(this).val();
+        var cls = testClass.val();
+        elementDisplay(cls, res);
+        sort()
+    });
+
+    function elementDisplay(cls, res) {
+        // 用例数据的显示
+        if (cls === "所有") {
+            if (res === "所有") {
+                tbodyTr.has('button').show();
+            } else if (res === '成功') {
+                tbodyTr.hide();
+                tbodyTr.has('button').has('.text-success').show()
+
+            } else if (res === '错误') {
+                tbodyTr.hide();
+                tbodyTr.has('button').has('.text-danger').show()
+
+            } else if (res === '失败') {
+                tbodyTr.hide();
+                tbodyTr.has('button').has('.text-warning').show()
+
+            } else if (res === '跳过') {
+                tbodyTr.hide();
+                tbodyTr.has('button').has('.text-info').show()
+            }
+        } else {
+            if (res === "所有") {
+                tbodyTr.hide();
+                tbodyTr.has('button').has('.' + cls + '').show()
+            } else if (res === '成功') {
+                tbodyTr.hide();
+                tbodyTr.has('button').has('.' + cls + '').has('.text-success').show()
+            } else if (res === '错误') {
+                tbodyTr.hide();
+                tbodyTr.has('button').has('.' + cls + '').has('.text-danger').show()
+            } else if (res === '失败') {
+                tbodyTr.hide();
+                tbodyTr.has('button').has('.' + cls + '').has('.text-warning').show()
+            } else if (res === '跳过') {
+                tbodyTr.hide();
+                tbodyTr.has('button').has('.' + cls + '').has('.text-info').show()
+            }
+        }
+    }
+
+    function sort() {
+        //重新排列显示序号
+        // 选择所有可以见的tr
+        var visibleTr = tbodyTr.filter(":visible");
+
+        visibleTr.each(function (index, element) {
+            element.firstElementChild.innerHTML = index + 1;
+
+        })
+
+    }
+
+    $('.nav-tabs li').click(function () {
+        $(this).find('a').addClass('active');
+        $(this).siblings().find('a').removeClass('active');
+        $(this).parent().next().children('.tab-content div').eq($(this).index()).addClass('active show').siblings().removeClass('active show')
+    });
+
+</script>
+
+
+</body>
+</html>
