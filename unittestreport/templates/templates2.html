@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"
@@ -268,7 +269,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        {% for hos in history %}
+                        {% for hos in history[::-1] %}
                         <tr>
                             <th scope="row">{{hos.begin_time}}</th>
                             <td>{{hos.all}}</td>
@@ -400,7 +401,7 @@
     function char01() {
         let myChart = echarts.init(document.getElementById('char1'));
         let option = {
-            color: ['#00a10a', '#ddb518', 'rgba(204,46,41,0.73)', '#85898c'],
+            color: ['#28a745', '#ffc107', '#dc3545', '#17a2b8'],
             tooltip: {
                 trigger: 'item',
                 formatter: '{a} <br/>{b}: {c} ({d}%)',
@@ -595,7 +596,7 @@
         var data = [resulte.success, resulte.fail, resulte.error, resulte.skip];
         var titlename = ["通过用例", "失败用例", "错误用例", "跳过用例",];
         var valdata = [resulte.all, resulte.all, resulte.all, resulte.all];
-        var myColor = ["#1089E7", "#F57474", "#56D0E3", "#F8B448"];
+        var myColor = ['#28a745', '#ffc107', '#dc3545', '#17a2b8'];
         option = {
             //图标位置
             grid: {

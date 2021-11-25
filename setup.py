@@ -13,7 +13,7 @@ with open("readme.md", "r", encoding='utf8') as fh:
 
 setup(
     name='unittestreport',
-    version='1.3.1',
+    version='1.3.3',
     author='MuSen',
     author_email='musen_nmb@qq.com',
     url='https://github.com/musen123/UnitTestReport',

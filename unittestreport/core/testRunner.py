@@ -181,8 +181,8 @@ class TestRunner():
         res = ReRunResult(count=count, interval=interval)
         self.result.append(res)
         suites = self.__classification_suite()
-        for case in suites:
-            case.run(res)
+        for case_ in suites:
+            case_.run(res)
         res.stopTestRun()
         res = self.__get_reports()
         return res
