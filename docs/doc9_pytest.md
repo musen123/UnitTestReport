@@ -34,9 +34,10 @@ pytest-testreport是基于python3.6开发的，安装前请确认你的python版
     --title=指定报告标题
     --tester=指定报告中的测试者
     --desc = 指定报告中的项目描述
+    --template = 指定报告模板样式（1 or 2）
     
     同时使用多个参数
-    pytest --report=musen.html --title=测试报告 --tester=测试菜鸟 --desc=项目描述
+    pytest --report=musen.html --title=测试报告 --tester=测试菜鸟 --desc=项目描述  --template=2
     
     
 *pytest.main执行*
@@ -47,7 +48,8 @@ pytest-testreport是基于python3.6开发的，安装前请确认你的python版
     pytest.main(['--report=musen.html',
                  '--title=测试报告标题',
                  '--tester=木森',
-                 '--desc=报告描述信息'])
+                 '--desc=报告描述信息',
+                 '--template=2'])
     
 
 

@@ -7,6 +7,7 @@ E-mail:3247119728@qq.com
 Company:湖南零檬信息技术有限公司
 ============================
 """
+import json
 import os
 import unittest
 import time
@@ -24,7 +25,7 @@ class TestRunner():
 
     def __init__(self, suite: unittest.TestSuite,
                  filename="report.html",
-                 report_dir=".",
+                 report_dir="./reports",
                  title='测试报告',
                  tester='测试员',
                  desc="XX项目测试生成的报告",
@@ -92,12 +93,20 @@ class TestRunner():
             test_result['pass_rate'] = '{:.2f}'.format(test_result['success'] / test_result['all'] * 100)
         else:
             test_result['pass_rate'] = 0
+        # 判断是否要生产测试报告
+        if os.path.isdir(self.report_dir):
+            pass
+        else:
+            os.mkdir(self.report_dir)
+        # 获取历史执行数据
+        test_result['history'] = self.__handle_history_data(test_result)
+
         template_path = os.path.join(os.path.dirname(__file__), '../templates')
         env = Environment(loader=FileSystemLoader(template_path))
         if self.templates == 2:
-            template = env.get_template('templates02.html')
+            template = env.get_template('templates2.html')
         elif self.templates == 3:
-            template = env.get_template('templates03.html')
+            template = env.get_template('templates3.html')
         else:
             template = env.get_template('templates.html')
         file_path = os.path.join(self.report_dir, self.filename)
@@ -110,6 +119,30 @@ class TestRunner():
                              }
         self.test_result = test_result
         return test_result
+
+    def __handle_history_data(self, test_result):
+        """
+        处理历史数据
+        :return:
+        """
+        try:
+            with open(os.path.join(self.report_dir, 'history.json'), 'r', encoding='utf-8') as f:
+                history = json.load(f)
+        except FileNotFoundError as e:
+            history = []
+        history.append({'success': test_result['success'],
+                        'all': test_result['all'],
+                        'fail': test_result['fail'],
+                        'skip': test_result['skip'],
+                        'error': test_result['error'],
+                        'runtime': test_result['runtime'],
+                        'begin_time': test_result['begin_time'],
+                        'pass_rate': test_result['pass_rate'],
+                        })
+
+        with open(os.path.join(self.report_dir, 'history.json'), 'w', encoding='utf-8') as f:
+            json.dump(history, f, ensure_ascii=True)
+        return history
 
     def __get_notice_content(self):
         """获取通知的内容"""
@@ -148,8 +181,8 @@ class TestRunner():
         res = ReRunResult(count=count, interval=interval)
         self.result.append(res)
         suites = self.__classification_suite()
-        for case in suites:
-            case.run(res)
+        for case_ in suites:
+            case_.run(res)
         res.stopTestRun()
         res = self.__get_reports()
         return res
