@@ -75,7 +75,7 @@ json文件中的数据格式如下：
 
 ### 4、yaml_data
 
-用例保存在yaml文件中，则可以使用yaml_data来实现数据驱动，使用yaml_data时，直接传入json文件的路径即可
+用例保存在yaml文件中，则可以使用yaml_data来实现数据驱动，使用yaml_data时，直接传入yaml文件的路径即可
 
 ```python
 from unittestreport import ddt,yaml_data
