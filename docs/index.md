@@ -18,9 +18,13 @@ unittestreport是基于`unittest`开发的的一个功能扩展库，关于unitt
 - **email：musen_nmb@qq.com**
 
     **ps:觉着好用的小伙伴们可以点亮小星星哦**
+    
 - **GitHub地址：https://github.com/musen123**
+
 - **Gitee地址：https://gitee.com/lemon-test-official**
+
 - **PYPI地址：https://pypi.org/project/unittestreport/**
+
 ## 2、安装unittestreport
 
 unittestreport是基于python3.6开发的，安装前请确认你的python版本>3.6
