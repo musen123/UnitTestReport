@@ -19,5 +19,6 @@ unittestreport/core/testRunner.py
 unittestreport/templates/__init__.py
 unittestreport/templates/dingtalk.md
 unittestreport/templates/templates.html
-unittestreport/templates/templates02.html
 unittestreport/templates/templates03.html
+unittestreport/templates/templates2.html
+unittestreport/templates/templates3.html

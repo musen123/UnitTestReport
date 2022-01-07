@@ -154,7 +154,7 @@ class ReRunResult(TestResult):
         self.run_cases = []
 
     def startTest(self, test):
-        if not hasattr(test, "count"):
+        if not hasattr(test, "count") or getattr(test, "count", 0) == 0:
             super().startTest(test)
 
     def stopTest(self, test):
