@@ -19,6 +19,9 @@ unittestreport是基于python3.6开发的，安装前请确认你的python版本
 - **安装命令**
 
     `pip install unittestreport`
+- 说明：原报告模板中的CDN站点失效了，已在`1.4.2`版中进行了更换，如果生成的报告样式和图表丢失，请升级unittestreport版本`pip install unittestreport==1.4.2`
+
+
 
 ## 3、使用文档
 

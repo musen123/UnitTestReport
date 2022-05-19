@@ -33,6 +33,8 @@ class SendEmail:
             self.smtp = smtplib.SMTP_SSL(host=host, port=port)
         else:
             self.smtp = smtplib.SMTP(host=host, port=port)
+        self.smtp.ehlo()
+
         self.smtp.login(user=user, password=password)
         self.user = user
 
@@ -136,30 +138,15 @@ class WeiXin:
             "corpsecret": self.corpsecret
         }
         result = requests.get(url=url, params=params).json()
-        if result.json()['errcode'] != 0:
+        if result['errcode'] != 0:
             raise ValueError(result["errmsg"])
         return result["access_token"]
 
     def send_info(self, data):
         """send info"""
         url = self.base_url + self.access_token
-        response = requests.post(url=url, data=data)
+        response = requests.post(url=url, json=data)
         return response
 
 
-if __name__ == '__main__':
-    url = "https://oapi.dingtalk.com/robot/send?access_token=690900b5ce6d5d10bb1218b8e64a4e2b55f96a6d116aaf50"
-    data = {
-        "msgtype": "markdown",
-        "markdown": {
-            "title": "自动化测试报告",
-            "text": open('python31.md', 'r', encoding='utf-8').read()
-        },
-        "at": {
-            "atMobiles": [],
-            "isAtAll": False
-        }
-    }
-    ding = DingTalk(url=url, data=data)
-    res = ding.send_info()
-    print(res)
+
