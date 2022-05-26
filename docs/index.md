@@ -33,7 +33,9 @@ unittestreport是基于python3.6开发的，安装前请确认你的python版本
 
     `pip install unittestreport`
 
-- 说明：原报告模板中的CDN站点失效了，已在`1.4.2`版中进行了更换，如果生成的报告样式和图表丢失，请升级unittestreport版本`pip install unittestreport==1.4.2`
+- 说明：1.4版本之前报告模板中的使用的jsdelivr CDN站点现在国内访问不了，已在`1.4.2`和`1.5.0`版中进行了更换，如果生成的报告样式和图表丢失，请升级unittestreport版本
+    - `pip install unittestreport==1.4.2`  用的bootstrap的CDN
+    - `pip install unittestreport==1.5.0`  用的七牛云的CDN
 
 
 ## 3、pytest的支持
