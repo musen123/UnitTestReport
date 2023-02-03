@@ -18,7 +18,7 @@ unittestreport是基于`unittest`开发的的一个功能扩展库，关于unitt
 
 - **微信号：musen9111 **
 
-    ![1615966527541](.\img\wx.jpg)  
+    ![1615966527541](..\img\wx.jpg)  
     
     **ps:觉着好用的小伙伴们可以点亮小星星哦**
     
