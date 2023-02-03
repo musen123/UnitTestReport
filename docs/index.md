@@ -18,7 +18,7 @@ unittestreport是基于`unittest`开发的的一个功能扩展库，关于unitt
 
 - **微信号：musen9111 **
 
-    <img src="img/wx.jpg" alt="wx" style="zoom:25%;" /> 
+    <img src="./img/wx.jpg" alt="wx" style="zoom:25%;" /> 
     
     
     **ps:觉着好用的小伙伴们可以点亮小星星哦**
