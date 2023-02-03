@@ -19,7 +19,7 @@ setup(
     url='https://github.com/musen123/UnitTestReport',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    install_requires=["Jinja2==3.0.3", "PyYAML==5.3.1","requests==2.24.0"],
+    install_requires=["Jinja2== 3.1.2", "PyYAML==5.3.1","requests==2.24.0"],
     packages=find_packages(),
     package_data={
         "": ["*.html",'*.md'],

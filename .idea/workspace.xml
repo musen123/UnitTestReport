@@ -1,35 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1bab853-8957-4a51-b8ea-57fafb8d5643" name="Default Changelist" comment="V1.3.1">
-      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.4.1-py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.4.1.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.4.2-py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.4.2.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.4.3-py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.4.3.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.5.0-py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.5.0.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.5.1-py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.5.1.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/wx.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/index.assets/wx-1675417138915.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/index.assets/wx.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/reports/history.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/reports/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/testcases/test_demo1.py" afterDir="false" />
+    <list default="true" id="a1bab853-8957-4a51-b8ea-57fafb8d5643" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/core/resultPush.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/core/resultPush.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/core/testRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/core/testRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport/templates/templates2.html" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport/templates/templates2.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +30,20 @@
         <entry file="file://$PROJECT_DIR$/docs/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="22">
-                <caret line="18" selection-start-line="18" selection-end-line="21" selection-end-column="4" />
+              <first_editor relative-caret-position="157">
+                <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-93">
+                <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
               </first_editor>
               <second_editor />
             </state>
@@ -139,17 +124,17 @@
         <option value="$PROJECT_DIR$/unittestreport/templates/templates2.html" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/tests/run.py" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/docs/index.md" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3" />
-    <option name="y" value="1" />
-    <option name="width" value="1562" />
-    <option name="height" value="1034" />
+    <option name="x" value="575" />
+    <option name="y" value="72" />
+    <option name="width" value="1569" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -482,7 +467,7 @@
       <workItem from="1663853485924" duration="1005000" />
       <workItem from="1668088288521" duration="641000" />
       <workItem from="1669897256577" duration="44000" />
-      <workItem from="1675416256984" duration="1078000" />
+      <workItem from="1675416256984" duration="1775000" />
     </task>
     <task id="LOCAL-00001" summary="V1.0.0">
       <created>1594888587671</created>
@@ -603,7 +588,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653553354755</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="V1.3.1">
+      <created>1675417350493</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675417350493</updated>
+    </task>
+    <task id="LOCAL-00019" summary="V1.3.1">
+      <created>1675417490091</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675417490091</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -639,7 +638,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228399000" />
+    <option name="totallyTimeSpent" value="229096000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -658,7 +657,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.21714285" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011287" side_tool="true" weight="0.26231387" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49887133" visible="true" weight="0.19592299" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49887133" visible="true" weight="0.33635333" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.06872852" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -681,11 +680,11 @@
     <MESSAGE value="V1.1.12" />
     <MESSAGE value="V1.3.3" />
     <MESSAGE value="V1.3.4" />
-    <MESSAGE value="V1.3.1" />
     <MESSAGE value="V1.4.0" />
     <MESSAGE value="V1.5.0" />
     <MESSAGE value="1.5.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.5.0" />
+    <MESSAGE value="V1.3.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.3.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1055,21 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="486">
-            <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unittestreport/core/sendEmail.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="998">
@@ -1129,11 +1113,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-93">
+            <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="22">
-            <caret line="18" selection-start-line="18" selection-end-line="21" selection-end-column="4" />
+          <first_editor relative-caret-position="157">
+            <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
