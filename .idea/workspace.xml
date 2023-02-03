@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1bab853-8957-4a51-b8ea-57fafb8d5643" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +30,8 @@
         <entry file="file://$PROJECT_DIR$/docs/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="270">
-                <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <first_editor relative-caret-position="297">
+                <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               </first_editor>
               <second_editor />
             </state>
@@ -42,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/docs/doc2_report.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="378">
+              <first_editor relative-caret-position="-853">
                 <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="43" />
               </first_editor>
               <second_editor />
@@ -158,8 +158,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="575" />
-    <option name="y" value="72" />
+    <option name="x" value="74" />
+    <option name="y" value="-23" />
     <option name="width" value="1569" />
     <option name="height" value="1030" />
   </component>
@@ -180,6 +180,12 @@
               <item name="UnitTestReport" type="b2602c69:ProjectViewProjectNode" />
               <item name="UnitTestReport" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnitTestReport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnitTestReport" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UnitTestReport" type="b2602c69:ProjectViewProjectNode" />
@@ -208,19 +214,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\git_project\UnitTestReport\docs\img" />
-      <recent name="C:\git_project\UnitTestReport\tests\testcases" />
-      <recent name="C:\project\MSUnitTestReport\UnitTestReport\unittestreport\core" />
-      <recent name="C:\project\MSUnitTestReport\UnitTestReport" />
-      <recent name="C:\project\MSUnitTestReport\UnitTestReport\unittestreport" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\git_project\UnitTestReport\docs\img" />
       <recent name="C:\git_project\UnitTestReport\unittestreport\templates" />
       <recent name="C:\git_project\UnitTestReport" />
       <recent name="C:\project\MSUnitTestReport\UnitTestReport\images" />
       <recent name="C:\project\MSUnitTestReport\UnitTestReport" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\git_project\UnitTestReport\docs\img" />
+      <recent name="C:\git_project\UnitTestReport\tests\testcases" />
+      <recent name="C:\project\MSUnitTestReport\UnitTestReport\unittestreport\core" />
+      <recent name="C:\project\MSUnitTestReport\UnitTestReport" />
+      <recent name="C:\project\MSUnitTestReport\UnitTestReport\unittestreport" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -494,7 +500,7 @@
       <workItem from="1668088288521" duration="641000" />
       <workItem from="1669897256577" duration="44000" />
       <workItem from="1675416256984" duration="1775000" />
-      <workItem from="1675418399300" duration="2216000" />
+      <workItem from="1675418399300" duration="3005000" />
     </task>
     <task id="LOCAL-00001" summary="V1.0.0">
       <created>1594888587671</created>
@@ -657,7 +663,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675420449302</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="V1.3.1">
+      <created>1675420773943</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1675420773943</updated>
+    </task>
+    <task id="LOCAL-00025" summary="V1.3.1">
+      <created>1675420919326</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1675420919326</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -693,13 +713,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231312000" />
+    <option name="totallyTimeSpent" value="232101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.20042872" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.20042872" />
       <window_info id="Structure" order="1" sideWeight="0.50143266" side_tool="true" weight="0.30602008" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -713,7 +733,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.21714285" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011287" side_tool="true" weight="0.26231387" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49887133" visible="true" weight="0.18799546" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49887133" visible="true" weight="0.46319366" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.06872852" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -815,7 +835,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/ptest_case.py" />
     <entry file="file://$PROJECT_DIR$/tests/test_api.py" />
     <entry file="file://$PROJECT_DIR$/docs/img/1615984513176.png" />
     <entry file="file://$PROJECT_DIR$/docs/doc6_dingding.md">
@@ -1174,10 +1193,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/img/wx.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/doc2_report.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="378">
+          <first_editor relative-caret-position="-853">
             <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="43" />
           </first_editor>
           <second_editor />
@@ -1187,8 +1209,8 @@
     <entry file="file://$PROJECT_DIR$/docs/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <first_editor relative-caret-position="297">
+            <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
           </first_editor>
           <second_editor />
         </state>
