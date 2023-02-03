@@ -33,7 +33,6 @@ unittestreport是基于python3.6开发的，安装前请确认你的python版本
 
 - ##### 开发者：木森
 
-- ##### E-mail:musen_nmb@qq.com
 - ##### WeChat:musen9111
 
 - ##### 大家在使用过程中发现bug,以及使用过程中有什么问题，可以联系我
