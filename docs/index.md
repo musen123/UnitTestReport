@@ -12,16 +12,20 @@ unittestreport是基于`unittest`开发的的一个功能扩展库，关于unitt
 - 测试结果推送到钉钉
 - 测试结果推送到企业微信
 
-大家在使用的过程中，发现有bug或者有一些更好的建议，可以通过邮件反馈给我！
+大家在使用的过程中，发现有bug或者有一些更好的建议，以及使用过程有什么问题 都可以加我微信！
 
-- **开发者：柠檬班-木森**
-- **email：musen_nmb@qq.com**
+- **开发者：木森**
 
+- **微信号：musen9111 **
+
+    <img src="img/wx.jpg" alt="wx" style="zoom:25%;" /> 
+    
+    
     **ps:觉着好用的小伙伴们可以点亮小星星哦**
     
 - **GitHub地址：https://github.com/musen123**
 
-- **Gitee地址：https://gitee.com/lemon-test-official**
+- **Gitee地址：https://gitee.com/musen123**
 
 - **PYPI地址：https://pypi.org/project/unittestreport/**
 
@@ -48,4 +52,4 @@ unittestreport是基于python3.6开发的，安装前请确认你的python版本
 
 
 
-    
+​    

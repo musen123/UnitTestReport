@@ -142,7 +142,7 @@
 
 <!--报告标题-->
 <div class="title text-success">
-    <div class="shadow-lg p-3 mb-5 bg-white rounded">{{ title }}</div>
+    <div class="shadow-lg p-3 mb-5 bg-white rounded">测试报告</div>
 </div>
 
 <!--汇总信息-->
@@ -152,19 +152,19 @@
         <ul class="list-group">
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">测试人员</button>
-                <span class="text-dark">{{ tester }}</span>
+                <span class="text-dark">测试员</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">开始时间</button>
-                <span class="text-dark">{{ begin_time }}</span>
+                <span class="text-dark">2022-09-22 21:37:34</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">执行时间</button>
-                <span class="text-dark">{{ runtime }}</span>
+                <span class="text-dark">0.00 S</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">用例总数</button>
-                <span class="text-dark">{{ all }}</span>
+                <span class="text-dark">3</span>
             </li>
 
 
@@ -175,19 +175,19 @@
 
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">成功用例</button>
-                <span class="text-success">{{ success }}</span>
+                <span class="text-success">2</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-warning">失败用例</button>
-                <span class="text-warning">{{ fail }}</span>
+                <span class="text-warning">1</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-danger">错误用例</button>
-                <span class="text-danger">{{ error }}</span>
+                <span class="text-danger">0</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-secondary">跳过用例</button>
-                <span class="text-secondary">{{ skip }}</span>
+                <span class="text-secondary">0</span>
             </li>
         </ul>
     </div>
@@ -195,7 +195,7 @@
         <ul class="list-group">
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">描述信息</button>
-                <span class="text-secondary">{{ desc }}</span>
+                <span class="text-secondary">XX项目测试生成的报告</span>
             </li>
         </ul>
     </div>
@@ -224,9 +224,9 @@
                     <span>测试类</span>
                     <select id="testClass">
                         <option>所有</option>
-                        {% for foo in testClass %}
-                            <option>{{ foo }}</option>
-                        {% endfor %}
+                        
+                            <option>TestDome</option>
+                        
                     </select>
 
                 </th>
@@ -250,22 +250,16 @@
             </tr>
             </thead>
             <tbody>
-            {% for foo in results %}
+            
                 <tr>
-                    <td>{{ loop.index }}</td>
-                    <td class="{{ foo.class_name }}">{{ foo.class_name }}</td>
-                    <td>{{ foo.method_name }}</td>
-                    <td>{{ foo.method_doc }}</td>
-                    <td>{{ foo.run_time }}</td>
-                    {% if foo.state == '成功' %}
-                        <td class="text-success">{{ foo.state }}</td>
-                    {% elif foo.state == '失败' %}
-                        <td class="text-warning">{{ foo.state }}</td>
-                    {% elif foo.state == '错误' %}
-                        <td class="text-danger">{{ foo.state }}</td>
-                    {% else %}
-                        <td class="text-info">{{ foo.state }}</td>
-                    {% endif %}
+                    <td>1</td>
+                    <td class="TestDome">TestDome</td>
+                    <td>test_demo2_0</td>
+                    <td>None</td>
+                    <td>0.0s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
                     <td>
                         <button type="button" class="btn btn-success btn_info">查看详情</button>
                     </td>
@@ -274,16 +268,95 @@
                 <tr class="test_log">
 
                     <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
-                        {% for item in foo.run_info %}
+                        
 
-                            <pre>{{ item }}</pre>
-                        {% endfor %}
-                        {% if foo.run_info == [] %}
-                            <pre>无内容输出！</pre>
-                        {% endif %}
+                            <pre>test_demo2_0 (test_demo1.TestDome)执行——>【通过】
+</pre>
+                        
+                        
                     </td>
                 </tr>
-            {% endfor %}
+            
+                <tr>
+                    <td>2</td>
+                    <td class="TestDome">TestDome</td>
+                    <td>test_demo2_1</td>
+                    <td>None</td>
+                    <td>0.0s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                        
+
+                            <pre>test_demo2_1 (test_demo1.TestDome)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>3</td>
+                    <td class="TestDome">TestDome</td>
+                    <td>test_demo_0</td>
+                    <td>None</td>
+                    <td>0.00199s</td>
+                    
+                        <td class="text-warning">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                        
+
+                            <pre>test_demo_0 (test_demo1.TestDome)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\python37\lib\unittest\case.py", line 615, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\git_project\UnitTestReport\tests\testcases\test_demo1.py", line 16, in wrapper
+    return test_func(self, case_data)
+</pre>
+                        
+
+                            <pre>  File "C:\git_project\UnitTestReport\tests\testcases\test_demo1.py", line 39, in test_demo
+    assert 1==2
+</pre>
+                        
+
+                            <pre>AssertionError
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
 
             </tbody>
         </table>
@@ -409,10 +482,10 @@
                     show: false
                 },
                 data: [
-                    {value: {{success}}, name: '通过'},
-                    {value: {{fail}}, name: '失败'},
-                    {value: {{error}}, name: '错误'},
-                    {value: {{skip}}, name: '跳过'}
+                    {value: 2, name: '通过'},
+                    {value: 1, name: '失败'},
+                    {value: 0, name: '错误'},
+                    {value: 0, name: '跳过'}
                 ]
             }
         ]
@@ -431,8 +504,8 @@
             {
                 name: '测试结果',
                 type: 'gauge',
-                detail: {formatter: '{{pass_rate}}%'},
-                data: [{value: '{{pass_rate}}', name: '用例通过率'}],
+                detail: {formatter: '66.67%'},
+                data: [{value: '66.67', name: '用例通过率'}],
                 axisLine: {
                     lineStyle: {
                         color: [

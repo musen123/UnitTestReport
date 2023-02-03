@@ -161,13 +161,18 @@ class TestRunner():
         :return: Test run results
         """
         suites = self.__classification_suite()
-        with ThreadPoolExecutor(max_workers=thread_count) as ts:
-            for i in suites:
-                # res = TestResult()
-                res = ReRunResult(count=count, interval=interval)
-                self.result.append(res)
-                ts.submit(i.run, result=res).add_done_callback(res.stopTestRun)
-            ts.shutdown(wait=True)
+
+        if thread_count>1:
+            with ThreadPoolExecutor(max_workers=thread_count) as ts:
+                for i in suites:
+                    res = ReRunResult(count=count, interval=interval)
+                    self.result.append(res)
+                    ts.submit(i.run, result=res).add_done_callback(res.stopTestRun)
+        else:
+            res = ReRunResult(count=count, interval=interval)
+            self.result.append(res)
+            self.suite.run(res)
+            res.stopTestRun()
         result = self.__get_reports()
         return result
 

@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1bab853-8957-4a51-b8ea-57fafb8d5643" name="Default Changelist" comment="">
+    <list default="true" id="a1bab853-8957-4a51-b8ea-57fafb8d5643" name="Default Changelist" comment="V1.3.1">
+      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.4.1-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.4.1.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.4.2-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.4.2.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.4.3-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.4.3.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.5.0-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.5.0.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.5.1-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/unittestreport-1.5.1.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/img/wx.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.assets/wx-1675417138915.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.assets/wx.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/reports/history.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/reports/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testcases/test_demo1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/doc9_pytest.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doc9_pytest.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/core/resultPush.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/core/resultPush.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/core/testRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/core/testRunner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates2.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittestreport.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittestreport/templates/templates2.html" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport/templates/templates2.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,14 +37,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docs/doc9_pytest.md">
+        <entry file="file://$PROJECT_DIR$/docs/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="125">
-                <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+              <first_editor relative-caret-position="22">
+                <caret line="18" selection-start-line="18" selection-end-line="21" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -37,9 +77,13 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>&lt;b&gt;</find>
+      <find>char3</find>
+      <find>case</find>
+      <find>position</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;h3&gt;</replace>
+      <replace>case_</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -52,7 +96,6 @@
         <option value="$PROJECT_DIR$/tests/tests.py" />
         <option value="$PROJECT_DIR$/tests/当前版本待优化bug" />
         <option value="$PROJECT_DIR$/unittestreport/readme.md" />
-        <option value="$PROJECT_DIR$/unittestreport/templates/templates.html" />
         <option value="$PROJECT_DIR$/unittestreport/core/ddt.py" />
         <option value="$PROJECT_DIR$/unittestreport/core/__init__.py" />
         <option value="$PROJECT_DIR$/LICENSE" />
@@ -72,33 +115,41 @@
         <option value="$PROJECT_DIR$/tests/test_case.py" />
         <option value="$PROJECT_DIR$/tests/__init__.py" />
         <option value="$PROJECT_DIR$/unittestreport/__init__.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/tests/sendDingTalk.py" />
-        <option value="$PROJECT_DIR$/tests/run.py" />
         <option value="$PROJECT_DIR$/docs/doc1_index1.md" />
-        <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/docs/doc2_report.md" />
         <option value="$PROJECT_DIR$/docs/doc4_email.md" />
         <option value="$PROJECT_DIR$/docs/doc8_thread.md" />
-        <option value="$PROJECT_DIR$/unittestreport/core/resultPush.py" />
-        <option value="$PROJECT_DIR$/unittestreport/core/testResult.py" />
-        <option value="$PROJECT_DIR$/unittestreport/core/testRunner.py" />
-        <option value="$PROJECT_DIR$/docs/doc5_ddt.md" />
         <option value="$PROJECT_DIR$/mkdocs.yml" />
-        <option value="$PROJECT_DIR$/docs/index.md" />
-        <option value="$PROJECT_DIR$/unittestreport/core/dataDriver.py" />
         <option value="$USER_HOME$/Documents/WXWork/1688853573098460/Cache/File/2021-06/templates03.html" />
         <option value="$PROJECT_DIR$/MANIFEST.in" />
-        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/tests/demo1.py" />
+        <option value="$PROJECT_DIR$/unittestreport/templates/templates1.html" />
+        <option value="$PROJECT_DIR$/docs/doc2_report.md" />
+        <option value="$PROJECT_DIR$/tests/reports/history.json" />
+        <option value="$PROJECT_DIR$/unittestreport/core/dataDriver.py" />
         <option value="$PROJECT_DIR$/docs/doc9_pytest.md" />
+        <option value="$PROJECT_DIR$/docs/doc7_webchat.md" />
+        <option value="$PROJECT_DIR$/unittestreport/core/testRunner.py" />
+        <option value="$PROJECT_DIR$/tests/testcases/test_demo1.py" />
+        <option value="$PROJECT_DIR$/docs/doc5_ddt.md" />
+        <option value="$PROJECT_DIR$/unittestreport/core/testResult.py" />
+        <option value="$PROJECT_DIR$/unittestreport/core/resultPush.py" />
+        <option value="$PROJECT_DIR$/tests/reports/report.html" />
+        <option value="$PROJECT_DIR$/unittestreport/templates/templates.html" />
+        <option value="$PROJECT_DIR$/unittestreport/templates/templates2.html" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/tests/run.py" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/docs/index.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="32" />
-    <option name="y" value="66" />
-    <option name="width" value="1776" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="3" />
+    <option name="y" value="1" />
+    <option name="width" value="1562" />
+    <option name="height" value="1034" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -106,6 +157,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,11 +170,16 @@
               <item name="UnitTestReport" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="UnitTestReport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnitTestReport" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -141,16 +198,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\git_project\UnitTestReport\docs\img" />
+      <recent name="C:\git_project\UnitTestReport\tests\testcases" />
       <recent name="C:\project\MSUnitTestReport\UnitTestReport\unittestreport\core" />
       <recent name="C:\project\MSUnitTestReport\UnitTestReport" />
       <recent name="C:\project\MSUnitTestReport\UnitTestReport\unittestreport" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\git_project\UnitTestReport\docs\img" />
+      <recent name="C:\git_project\UnitTestReport\unittestreport\templates" />
       <recent name="C:\git_project\UnitTestReport" />
       <recent name="C:\project\MSUnitTestReport\UnitTestReport\images" />
       <recent name="C:\project\MSUnitTestReport\UnitTestReport" />
-      <recent name="C:\project\MSUnitTestReport\UnitTestReport\tests" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -247,18 +306,18 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in dataDriver.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_demo1.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="UnitTestReport" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unittestreport/core" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/unittestreport/core/dataDriver.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcases/test_demo1.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -266,16 +325,16 @@
       <item itemvalue="Python.__init__" />
       <item itemvalue="Python.dataDriver" />
       <item itemvalue="Python.run" />
-      <item itemvalue="Python tests.Unittests in dataDriver.py" />
       <item itemvalue="Python tests.Unittests in C:/git_project/UnitTestReport/tests/test_case.py" />
+      <item itemvalue="Python tests.Unittests in test_demo1.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
+        <item itemvalue="Python tests.Unittests in test_demo1.py" />
         <item itemvalue="Python.dataDriver" />
         <item itemvalue="Python.__init__" />
         <item itemvalue="Python tests.Unittests in C:/git_project/UnitTestReport/tests/test_case.py" />
-        <item itemvalue="Python tests.Unittests in dataDriver.py" />
       </list>
     </recent_temporary>
   </component>
@@ -339,7 +398,91 @@
       <workItem from="1624716457551" duration="9000" />
       <workItem from="1625119136371" duration="2528000" />
       <workItem from="1625134357258" duration="741000" />
-      <workItem from="1625138304745" duration="383000" />
+      <workItem from="1625138304745" duration="1119000" />
+      <workItem from="1625301153312" duration="97000" />
+      <workItem from="1625303043861" duration="37000" />
+      <workItem from="1625304853298" duration="398000" />
+      <workItem from="1625644622296" duration="186000" />
+      <workItem from="1625644898726" duration="960000" />
+      <workItem from="1627478184929" duration="345000" />
+      <workItem from="1627538075629" duration="135000" />
+      <workItem from="1627632106810" duration="5193000" />
+      <workItem from="1627652065519" duration="996000" />
+      <workItem from="1627983942185" duration="743000" />
+      <workItem from="1627989493231" duration="8000" />
+      <workItem from="1627997985560" duration="131000" />
+      <workItem from="1628062459341" duration="9457000" />
+      <workItem from="1628234892963" duration="2972000" />
+      <workItem from="1628240210796" duration="1296000" />
+      <workItem from="1628510032402" duration="2124000" />
+      <workItem from="1628517448278" duration="283000" />
+      <workItem from="1630389870670" duration="605000" />
+      <workItem from="1630392392462" duration="950000" />
+      <workItem from="1630401316068" duration="710000" />
+      <workItem from="1634808975186" duration="787000" />
+      <workItem from="1634886546934" duration="763000" />
+      <workItem from="1634979872302" duration="74000" />
+      <workItem from="1634979966244" duration="78000" />
+      <workItem from="1635317417825" duration="511000" />
+      <workItem from="1636701009924" duration="1990000" />
+      <workItem from="1636710214899" duration="223000" />
+      <workItem from="1637822490269" duration="1015000" />
+      <workItem from="1638165798767" duration="797000" />
+      <workItem from="1638433982278" duration="326000" />
+      <workItem from="1639380412494" duration="3761000" />
+      <workItem from="1639463411892" duration="1209000" />
+      <workItem from="1639473434168" duration="608000" />
+      <workItem from="1639640321664" duration="99000" />
+      <workItem from="1639990808883" duration="608000" />
+      <workItem from="1640067339648" duration="26000" />
+      <workItem from="1640077582593" duration="606000" />
+      <workItem from="1640673396968" duration="329000" />
+      <workItem from="1640685238321" duration="647000" />
+      <workItem from="1640845733403" duration="609000" />
+      <workItem from="1641548687283" duration="1895000" />
+      <workItem from="1641553259879" duration="4316000" />
+      <workItem from="1641630990769" duration="1223000" />
+      <workItem from="1641986883301" duration="1178000" />
+      <workItem from="1642849733256" duration="695000" />
+      <workItem from="1643003316339" duration="660000" />
+      <workItem from="1643006959399" duration="330000" />
+      <workItem from="1643096326420" duration="1826000" />
+      <workItem from="1644570203637" duration="666000" />
+      <workItem from="1645767455709" duration="887000" />
+      <workItem from="1645768902999" duration="10000" />
+      <workItem from="1648539153721" duration="711000" />
+      <workItem from="1648818264295" duration="72000" />
+      <workItem from="1651051680608" duration="617000" />
+      <workItem from="1651124122120" duration="8000" />
+      <workItem from="1651126164285" duration="66000" />
+      <workItem from="1651150258484" duration="354000" />
+      <workItem from="1651153845198" duration="602000" />
+      <workItem from="1652420276974" duration="740000" />
+      <workItem from="1652775593160" duration="467000" />
+      <workItem from="1652856366582" duration="340000" />
+      <workItem from="1652857474048" duration="2678000" />
+      <workItem from="1652951479476" duration="1424000" />
+      <workItem from="1652953367399" duration="756000" />
+      <workItem from="1653286995396" duration="140000" />
+      <workItem from="1653547664490" duration="9000" />
+      <workItem from="1653553028747" duration="470000" />
+      <workItem from="1653631755746" duration="87000" />
+      <workItem from="1653631917314" duration="1275000" />
+      <workItem from="1653634591770" duration="11000" />
+      <workItem from="1654493697590" duration="912000" />
+      <workItem from="1654497009161" duration="1211000" />
+      <workItem from="1655798303532" duration="699000" />
+      <workItem from="1656582990379" duration="101000" />
+      <workItem from="1657179314379" duration="744000" />
+      <workItem from="1657691001450" duration="2384000" />
+      <workItem from="1660917498579" duration="889000" />
+      <workItem from="1662357933839" duration="1909000" />
+      <workItem from="1663762692851" duration="41000" />
+      <workItem from="1663766494284" duration="36000" />
+      <workItem from="1663853485924" duration="1005000" />
+      <workItem from="1668088288521" duration="641000" />
+      <workItem from="1669897256577" duration="44000" />
+      <workItem from="1675416256984" duration="1078000" />
     </task>
     <task id="LOCAL-00001" summary="V1.0.0">
       <created>1594888587671</created>
@@ -397,68 +540,131 @@
       <option name="project" value="LOCAL" />
       <updated>1621325339695</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="V1.3.1">
+      <created>1628070395974</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1628070395974</updated>
+    </task>
+    <task id="LOCAL-00010" summary="V1.3.3">
+      <created>1637822791621</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637822791621</updated>
+    </task>
+    <task id="LOCAL-00011" summary="V1.3.3">
+      <created>1638165974657</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1638165974657</updated>
+    </task>
+    <task id="LOCAL-00012" summary="V1.3.4">
+      <created>1638434191365</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1638434191365</updated>
+    </task>
+    <task id="LOCAL-00013" summary="V1.4.0">
+      <created>1641559512918</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1641559512918</updated>
+    </task>
+    <task id="LOCAL-00014" summary="V1.3.1">
+      <created>1641560687051</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1641560687051</updated>
+    </task>
+    <task id="LOCAL-00015" summary="V1.4.0">
+      <created>1641560832651</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1641560832651</updated>
+    </task>
+    <task id="LOCAL-00016" summary="V1.5.0">
+      <created>1652953414851</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1652953414851</updated>
+    </task>
+    <task id="LOCAL-00017" summary="1.5.0">
+      <created>1653553354755</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1653553354755</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_dataDriver_py - 2020.08.18 at 19h 49m 01s.xml">
-      <configuration name="Unittests in dataDriver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_dataDriver_py - 2020.08.18 at 19h 49m 15s.xml">
-      <configuration name="Unittests in dataDriver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_dataDriver_py - 2020.08.18 at 19h 49m 39s.xml">
-      <configuration name="Unittests in dataDriver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_dataDriver_py - 2020.08.19 at 17h 21m 01s.xml">
-      <configuration name="Unittests in dataDriver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_dataDriver_py - 2020.08.19 at 17h 22m 51s.xml">
-      <configuration name="Unittests in dataDriver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_dataDriver_py - 2020.08.19 at 17h 24m 48s.xml">
-      <configuration name="Unittests in dataDriver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_dataDriver_py - 2020.08.19 at 17h 25m 50s.xml">
-      <configuration name="Unittests in dataDriver.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_case_py - 2020.08.20 at 10h 50m 39s.xml">
-      <configuration name="Unittests in test_case.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_case_py - 2020.08.20 at 15h 42m 39s.xml">
       <configuration name="Unittests in test_case.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_test_case_py - 2020.08.31 at 11h 10m 58s.xml">
       <configuration name="Unittests in test_case.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_demo1_py - 2021.07.30 at 17h 17m 40s.xml">
+      <configuration name="Unittests in demo1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_demo1_py - 2021.07.30 at 17h 31m 40s.xml">
+      <configuration name="Unittests in demo1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_demo1_py - 2021.07.30 at 17h 31m 58s.xml">
+      <configuration name="Unittests in demo1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_demo1_py - 2021.07.30 at 20h 06m 56s.xml">
+      <configuration name="Unittests in demo1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_demo1_py - 2021.10.22 at 15h 09m 16s.xml">
+      <configuration name="Unittests in test_demo1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_demo1_py - 2021.10.22 at 15h 09m 49s.xml">
+      <configuration name="Unittests in test_demo1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_demo1_py - 2021.10.22 at 15h 10m 17s.xml">
+      <configuration name="Unittests in test_demo1.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_demo1_py - 2021.10.22 at 15h 10m 30s.xml">
+      <configuration name="Unittests in test_demo1.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148764000" />
+    <option name="totallyTimeSpent" value="228399000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="32" y="66" width="1776" height="1038" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.18016432" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.1977492" />
       <window_info id="Structure" order="1" sideWeight="0.50143266" side_tool="true" weight="0.30602008" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49962378" weight="0.32790697" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.04360465" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3633721" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49962378" weight="0.3272933" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47267997" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3252385" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.21714285" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003762" side_tool="true" weight="0.3593023" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49962378" visible="true" weight="0.56128293" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.4342857" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011287" side_tool="true" weight="0.26231387" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49887133" visible="true" weight="0.19592299" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.06872852" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3291262" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,87 +679,90 @@
     <MESSAGE value="V1.0.7" />
     <MESSAGE value="V1.1.1" />
     <MESSAGE value="V1.1.12" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.1.12" />
+    <MESSAGE value="V1.3.3" />
+    <MESSAGE value="V1.3.4" />
+    <MESSAGE value="V1.3.1" />
+    <MESSAGE value="V1.4.0" />
+    <MESSAGE value="V1.5.0" />
+    <MESSAGE value="1.5.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.5.0" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/unittestreport/core/testRunner.py</url>
+          <line>204</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/UnitTestReport$Unittests_in_dataDriver_py.coverage" NAME="Unittests in dataDriver.py Coverage Results" MODIFIED="1597829118192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittestreport/core" />
+    <SUITE FILE_PATH="coverage/UnitTestReport$Unittests_in_demo1_py.coverage" NAME="Unittests in demo1.py Coverage Results" MODIFIED="1627646816682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/UnitTestReport$dataDriver.coverage" NAME="dataDriver Coverage Results" MODIFIED="1598930168213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittestreport/core" />
-    <SUITE FILE_PATH="coverage/UnitTestReport$run.coverage" NAME="run Coverage Results" MODIFIED="1598930319929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/UnitTestReport$run.coverage" NAME="run Coverage Results" MODIFIED="1663853853705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/UnitTestReport1_0_4$tests.coverage" NAME="tests Coverage Results" MODIFIED="1595313914759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/UnitTestReport$tests.coverage" NAME="tests Coverage Results" MODIFIED="1594971738265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/UnitTestReport$pytest_in_dataDriver_py.coverage" NAME="pytest in dataDriver.py Coverage Results" MODIFIED="1597742760414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittestreport/core" />
+    <SUITE FILE_PATH="coverage/UnitTestReport$Unittests_in_test_demo1_py.coverage" NAME="Unittests in test_demo1.py Coverage Results" MODIFIED="1634886630090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/UnitTestReport$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1598929246144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/UnitTestReport$Unittests_in_test_case_py.coverage" NAME="Unittests in test_case.py Coverage Results" MODIFIED="1598843454339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>func2</expression-string>
+        <expression-string>host</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>cls.__dict__.items()</expression-string>
+        <expression-string>smtplib.SMTP_SSL(host, port)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>smtplib.SMTP_SSL('smtp.qq.com',465)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>smtplib.SMTP_SSL('smtp.qq.com',564)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>smtplib.SMTP_SSL(host=host, port=port)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.smtp = smtplib.SMTP_SSL(host=host, port=port)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>test.count</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>test.countTestCases()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>test</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/cases.yaml" />
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/1986093431/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="352" column="4" selection-start-line="352" selection-start-column="4" selection-end-line="352" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/python37/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="273" column="4" selection-start-line="273" selection-start-column="4" selection-end-line="273" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/python37/Lib/site-packages/yaml/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="102" column="23" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/tests/test_case.py" />
-    <entry file="file://$PROJECT_DIR$/tests/DingTalk/top/api/rest/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/tests/DingTalk/test.py" />
-    <entry file="file://$PROJECT_DIR$/tests/DingTalk/aliyun_demo.py" />
-    <entry file="file://$PROJECT_DIR$/tests/DingTalk/dingtalk/api/rest/CorpChatbotInstallRequest.py" />
-    <entry file="file://$PROJECT_DIR$/tests/sendDingTalk.py" />
-    <entry file="file://$PROJECT_DIR$/unittestreport.egg-info/PKG-INFO">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7050" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport.egg-info/requires.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/mkdocs.yml" />
     <entry file="file://$PROJECT_DIR$/tests/ptest_case.py" />
-    <entry file="file://$PROJECT_DIR$/tests/run.py" />
     <entry file="file://$PROJECT_DIR$/tests/test_api.py" />
     <entry file="file://$PROJECT_DIR$/docs/img/1615984513176.png" />
-    <entry file="file://$PROJECT_DIR$/docs/doc7_webchat.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <folding>
-              <element signature="e#0#15#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/doc6_dingding.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -568,13 +777,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/images/1598866521882-8470de3c.png" />
     <entry file="file://$PROJECT_DIR$/site/search.html" />
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.rst" />
     <entry file="file://$PROJECT_DIR$/docs/doc4_email.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -586,95 +788,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/doc3_rerun.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/doc2_report.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="230">
-            <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/core/parameterized.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/core/reRun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-          <folding>
-            <element signature="e#150#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/core/sendEmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="60" column="49" lean-forward="true" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
-          <folding>
-            <element signature="e#149#158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="e#247#291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/doc5_ddt.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-800">
-            <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/core/resultPush.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="82" column="50" lean-forward="true" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mkdocs.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="598">
-            <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -700,64 +817,10 @@
     <entry file="file://$PROJECT_DIR$/docs/img/1615966527547.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="25">
-            <caret line="26" selection-start-line="26" selection-end-line="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/templates/templates02.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/core/testResult.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="128" column="35" lean-forward="true" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
-          <folding>
-            <element signature="e#149#158#0" expanded="true" />
-            <element signature="e#4778#5419#0" />
-            <element signature="e#5464#6100#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/WXWork/1688853573098460/Cache/File/2021-06/templates03.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="82" column="17" lean-forward="true" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/templates/templates03.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/templates/templates.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="198" selection-start-line="198" selection-end-line="198" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/core/dataDriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -768,38 +831,309 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://C:/virtualenv/UnitTestReport/Lib/site-packages/yaml/loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="279">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unittestreport/core/testRunner.py">
+    <entry file="file://C:/virtualenv/UnitTestReport/Lib/site-packages/yaml/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="270">
+          <caret line="109" column="21" lean-forward="true" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/lib/unittestreport/templates/templates.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2775" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/report.html" />
+    <entry file="file://$PROJECT_DIR$/build/lib/unittestreport/core/testResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2325">
           <folding>
-            <element signature="e#165#174#0" expanded="true" />
-            <element signature="e#772#1701#0" />
-            <element signature="e#1749#2080#0" />
-            <element signature="e#2119#3896#0" />
-            <element signature="e#3942#4201#0" />
-            <element signature="e#4267#5076#0" />
-            <element signature="e#5132#5601#0" />
-            <element signature="e#5709#6375#0" />
-            <element signature="e#6416#7096#0" />
-            <element signature="e#7215#8267#0" />
-            <element signature="e#8363#9044#0" />
+            <element signature="e#149#158#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/lib/unittestreport/core/testRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3000" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="e#247#291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/reports/history.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/doc9_pytest.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="125">
-            <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <first_editor relative-caret-position="525">
+            <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/testcases/test_demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/doc2_report.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="243">
+            <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/doc3_rerun.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/doc7_webchat.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="21" />
+            <folding>
+              <element signature="e#0#15#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/doc5_ddt.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="167">
+            <caret line="77" column="56" selection-start-line="77" selection-start-column="56" selection-end-line="77" selection-end-column="56" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/core/reRun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="e#150#166#0" expanded="true" />
+            <element signature="e#240#638#0" />
+            <element signature="e#675#979#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/templates/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/templates/templates.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="83" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/templates/templates2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/templates/templates3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/templates/templates03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python37/Lib/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python37/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-642">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python37/Lib/smtplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="1009" column="12" selection-start-line="1009" selection-start-column="12" selection-end-line="1009" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/reports/report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/core/parameterized.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12123">
+          <caret line="455" column="62" selection-start-line="455" selection-start-column="57" selection-end-line="455" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/core/testRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="204" selection-start-line="204" selection-end-line="204" />
+          <folding>
+            <element signature="e#165#176#0" expanded="true" />
+            <element signature="e#792#1721#0" />
+            <element signature="e#792#1147#1" />
+            <element signature="e#1769#2100#0" />
+            <element signature="e#2139#4141#0" />
+            <element signature="e#2195#2380#0" />
+            <element signature="e#4201#5118#0" />
+            <element signature="e#4274#4398#0" />
+            <element signature="e#5164#5423#0" />
+            <element signature="e#5489#6448#0" />
+            <element signature="e#6504#6975#0" />
+            <element signature="e#7790#8470#0" />
+            <element signature="e#8589#9641#0" />
+            <element signature="e#9737#10418#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/core/resultPush.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding>
+            <element signature="e#2483#3662#0" />
+            <element signature="e#3683#4958#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="486">
+            <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/core/sendEmail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="998">
+          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+          <folding>
+            <element signature="e#149#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/core/dataDriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <element signature="e#230#245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unittestreport/core/testResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="104" column="54" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="54" />
+          <folding>
+            <element signature="e#149#158#0" expanded="true" />
+            <element signature="e#481#775#0" />
+            <element signature="e#991#1208#0" />
+            <element signature="e#2396#2734#0" />
+            <element signature="e#4884#5233#0" />
+            <element signature="e#5260#5419#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-271">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="22">
+            <caret line="18" selection-start-line="18" selection-end-line="21" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
