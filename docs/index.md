@@ -16,7 +16,7 @@ unittestreport是基于`unittest`开发的的一个功能扩展库，关于unitt
 
 - **开发者：木森**
 
-- **微信号：musen9111 **
+- **微信号：python771 **
 
     ![1615966527541](.\img\wx.jpg)  
     
