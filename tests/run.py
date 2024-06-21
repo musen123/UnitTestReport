@@ -14,7 +14,7 @@ from unittestreport import TestRunner
 
 suite = unittest.defaultTestLoader.discover(r'C:\git_project\UnitTestReport\tests\testcases')
 
-runner = TestRunner(suite,templates=1,report_dir='./reports')
+runner = TestRunner(suite,templates=2,report_dir='./reports')
 
 runner.run()
 
@@ -27,3 +27,8 @@ runner.send_email(host='smtp.qq.com',
 
 # python setup.py sdist bdist_wheel
 # twine upload dist/*
+
+"""
+pypi-AgEIcHlwaS5vcmcCJGE4ODRmMDM5LTUwMTQtNDZjMy1hY2ZlLTE2M2YzYzg5YTgzMwACFlsxLFsidW5pdHRlc3RyZXBvcnQiXV0AAixbMixbIjIzZmM2ZTYyLWIyMTMtNGIzMC04NjQyLWFlY2VhZTY4MGUzZCJdXQAABiB7heBzh7qrPDT-_y9YJaWXgMACfOMsNWaJ-7YlSgcJ8w
+
+"""

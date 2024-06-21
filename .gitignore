@@ -1,1 +1,6 @@
-"site/" 
+logs/
+setup.py
+build
+dist
+*.egg-info
+

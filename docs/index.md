@@ -24,8 +24,6 @@ unittestreport是基于`unittest`开发的的一个功能扩展库，关于unitt
     
 - **GitHub地址：https://github.com/musen123**
 
-- **Gitee地址：https://gitee.com/musen123**
-
 - **PYPI地址：https://pypi.org/project/unittestreport/**
 
 ## 2、安装unittestreport
