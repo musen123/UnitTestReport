@@ -83,6 +83,8 @@ class TestResult(unittest.TestResult):
         test.class_name = test.__class__.__qualname__
         test.method_name = test.__dict__['_testMethodName']
         test.method_doc = test.shortDescription()
+        if isinstance(test.method_doc, str):
+            test.method_doc = test.method_doc.replace('"', "'")
         self.fields['results'].append(test)
         self.fields["testClass"].add(test.class_name)
         self.complete_output()
@@ -134,6 +136,8 @@ class TestResult(unittest.TestResult):
             test.class_name = res.group(2)
             test.method_name = res.group(1)
             test.method_doc = test.shortDescription()
+            if isinstance(test.method_doc, str):
+                test.method_doc = test.method_doc.replace('"', "'")
             self.fields['results'].append(test)
             self.fields["testClass"].add(test.class_name)
         else:
