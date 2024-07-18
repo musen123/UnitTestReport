@@ -1,12 +1,12 @@
 Metadata-Version: 2.1
 Name: unittestreport
-Version: 1.5.4
+Version: 1.5.6
 Summary: A unittest report plugin for python3
 Home-page: https://github.com/musen123/UnitTestReport
 Author: MuSen
 Author-email: musen_nmb@qq.com
 Classifier: Programming Language :: Python :: 3
-Requires-Python: >=3.6
+Requires-Python: >=3.7
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
@@ -45,7 +45,7 @@ unittestreport是基于python3.6开发的，安装前请确认你的python版本
 
 - ##### 开发者：木森
 
-- ##### WeChat:python771
+- ##### WeChat: python771
 
 - ##### 大家在使用过程中发现bug,以及使用过程中有什么问题，可以联系我
 

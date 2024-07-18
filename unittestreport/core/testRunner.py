@@ -158,7 +158,7 @@ class TestRunner():
         """
         suites = self.__classification_suite()
 
-        if thread_count>1:
+        if thread_count > 1:
             with ThreadPoolExecutor(max_workers=thread_count) as ts:
                 for i in suites:
                     res = ReRunResult(count=count, interval=interval)
@@ -277,3 +277,42 @@ class TestRunner():
         wx = WeiXin(access_token=access_token, corpid=corpid, corpsecret=corpsecret)
         response = wx.send_info(data=data)
         return response
+
+    @staticmethod
+    def customize_run_case(run_list: list) -> unittest.TestSuite:
+        """
+        自定义运行用例顺序
+        :param run_list:
+        :return
+        可以按照下面这种格式，来自定义要每个测试类中要执行的用例，可以支持用例重复执行
+        run_list = [
+            {
+                "cls": TestDemo,
+                "run_case": {
+                    'test_rerun_1_login_out': TestDemo.test_login_out,
+                    'test_rerun_2_phone_login': TestDemo.test_phone_login,
+                    'test_rerun_3_login_out': TestDemo.test_login_out,
+                    'test_rerun_4_test_email_login': TestDemo.test_email_login
+                }
+            }, {
+                "cls": TestDemo2,
+                "run_case": {
+                    'test_demo2_01_email_login': TestDemo2.test_demo2_email_login,
+                    'test_demo2_02_login_out': TestDemo2.test_demo2_login_out,
+                    'test_demo2_03_email_login': TestDemo2.test_demo2_email_login,
+                    'test_demo2_04_login_out': TestDemo2.test_demo2_login_out,
+                    'test_demo2_05_email_login': TestDemo2.test_demo2_email_login,
+                }
+            }
+        ]
+        """
+        suite = unittest.TestSuite()
+        for item in run_list:
+            cls = item.get("cls")
+            run_case = item.get("run_case")
+            su = unittest.TestSuite()
+            for k, v in run_case.items():
+                setattr(cls, k, v)
+                su.addTest(cls(k))
+            suite.addTests(su)
+        return suite

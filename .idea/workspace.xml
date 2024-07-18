@@ -5,21 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1bab853-8957-4a51-b8ea-57fafb8d5643" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.readthedocs.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/UnitTestReport.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UnitTestReport.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/templates/templates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/wx.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/wx.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/core/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/core/dataDriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/core/dataDriver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/core/reRun.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/core/reRun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/core/resultPush.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/core/resultPush.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/core/sendEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/core/sendEmail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/core/testResult.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/core/testResult.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/core/testRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/core/testRunner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/unittestreport/templates/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/unittestreport/templates/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/doc3_rerun.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/doc3_rerun.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/reports/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/reports/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/reports/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unittestreport.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport.egg-info/SOURCES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport.egg-info/dependency_links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport.egg-info/dependency_links.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unittestreport.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport.egg-info/requires.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport.egg-info/top_level.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittestreport/templates/templates.html" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport/templates/templates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittestreport/core/dataDriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport/core/dataDriver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittestreport/core/testRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/unittestreport/core/testRunner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,20 +167,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/githubcode/UnitTestReport",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/githubcode/UnitTestReport&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\githubcode\UnitTestReport" />
@@ -458,7 +463,19 @@
       <workItem from="1718881184303" duration="170000" />
       <workItem from="1718950352758" duration="831000" />
       <workItem from="1718954286855" duration="258000" />
-      <workItem from="1718954857405" duration="3556000" />
+      <workItem from="1718954857405" duration="5621000" />
+      <workItem from="1719020785432" duration="382000" />
+      <workItem from="1719035022889" duration="1358000" />
+      <workItem from="1719470530693" duration="895000" />
+      <workItem from="1719502443179" duration="1460000" />
+      <workItem from="1719554375674" duration="2558000" />
+      <workItem from="1719638870224" duration="1407000" />
+      <workItem from="1720090073630" duration="1642000" />
+      <workItem from="1720418494060" duration="491000" />
+      <workItem from="1720868499554" duration="956000" />
+      <workItem from="1720871210494" duration="1431000" />
+      <workItem from="1721021990996" duration="614000" />
+      <workItem from="1721287763162" duration="2405000" />
     </task>
     <task id="LOCAL-00001" summary="V1.0.0">
       <created>1594888587671</created>
@@ -737,17 +754,6 @@
     <MESSAGE value="V1.3.1" />
     <option name="LAST_COMMIT_MESSAGE" value="V1.3.1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/unittestreport/core/testRunner.py</url>
-          <line>204</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/UnitTestReport$pytest_in_dataDriver_py.coverage" NAME="pytest in dataDriver.py Coverage Results" MODIFIED="1597742760414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittestreport/core" />
     <SUITE FILE_PATH="coverage/UnitTestReport$Unittests_in_dataDriver_py.coverage" NAME="Unittests in dataDriver.py Coverage Results" MODIFIED="1597829118192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittestreport/core" />
@@ -757,8 +763,8 @@
     <SUITE FILE_PATH="coverage/UnitTestReport$dataDriver.coverage" NAME="dataDriver Coverage Results" MODIFIED="1598930168213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unittestreport/core" />
     <SUITE FILE_PATH="coverage/UnitTestReport$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1598929246144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/UnitTestReport1_0_4$tests.coverage" NAME="tests Coverage Results" MODIFIED="1595313914759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/UnitTestReport$run.coverage" NAME="run Coverage Results" MODIFIED="1663853853705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/UnitTestReport$Unittests_in_test_case_py.coverage" NAME="Unittests in test_case.py Coverage Results" MODIFIED="1598843454339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/UnitTestReport$run.coverage" NAME="run Coverage Results" MODIFIED="1719554541679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">

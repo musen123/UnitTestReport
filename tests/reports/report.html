@@ -1,84 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>测试报告</title>
 
-       <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <script src=" https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/echarts/5.1.2/echarts.min.js"></script>
     <!--    页面样式-->
     <style type="text/css">
         /*标题样式*/
+
+        .main {
+            background: rgba(7, 10, 88, 0.99);
+        }
+
         .title {
             width: auto;
-            height: 60px;
+            height: 80px;
             text-align: center;
-            font: bolder 38px/60px "Microsoft YaHei UI";
+            font: bolder 30px/80px "Microsoft YaHei UI";
+            color: #fff;
+            background: rgba(3, 14, 70, 0.5);
+            border-bottom: solid 1px rgb(3, 14, 70);
+            margin-bottom: 10px;
         }
 
-        /*汇总信息样式*/
-        .summary {
-            width: 90%;
-            position: absolute;
-            top: 120px;
-            margin-left: 5%;
-
-        }
-
-        .text-left {
-            font: bolder 20px/30px "Microsoft YaHei UI";
-        }
-
-        .left {
-            width: 50%;
-            float: left;
-
-        }
-
-        .right {
-            width: 50%;
-            float: right;
-
-        }
-
-        .desc {
-            float: left;
+        .content-box {
+            height: 700px;
             width: 100%;
+            display: flex;
+            margin-bottom: 10px;
         }
 
-        .list-group-item span {
-            font: normal 16px/38px "Microsoft YaHei UI";
-            padding: 30px;
-
+        .box1 {
+            flex: 3;
         }
 
-        .list-group-item {
+        .box2 {
+            flex: 5;
+            margin: 0 10px;
+        }
+
+        .box3 {
+            flex: 4;
+        }
+
+        .panel {
             position: relative;
-            display: block;
-            padding: .4rem 1.25rem;
-            background-color: #fff;
-            border: 1px solid rgba(0, 0, 0, .125);
+            border: 1px solid rgba(25, 186, 139, 0.17);
+            background: rgba(3, 14, 70, 0.5);
+            padding: 0 10px 50px;
+            margin-bottom: 10px;
         }
+
+        .panel h2, .test_info h2 {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #007bff;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .panel .chart {
+            height: 250px;
+        }
+
+        .panel .chart2 {
+            height: 350px;
+        }
+
+        .panel .desc {
+            height: 150px;
+        }
+
+        .panel .desc .info {
+            font: normal 18px/25px "Microsoft YaHei UI";
+            color: #fff;
+            display: flex;
+        }
+
+        .panel .desc .info div {
+            padding: 10px;
+            border: solid 1px #6c757d;
+        }
+
+        .panel .desc .info div span {
+            margin-left: 20px;
+        }
+
 
         /* 执行信息样式   */
         .test_info {
-            width: 90%;
-            position: absolute;
-            top: 900px;
-            margin-left: 5%;
+            width: 100%;
+            padding: 20px 100px;
+            background: rgba(3, 14, 70, 0.5);
 
-            color: #28a745 !important;
         }
 
-        .table td, th {
-            border: solid 2px rgba(9, 122, 51, 0.11) !important;
-            padding: 0;
+        .table td, .table th {
+            border: solid 1px #5765a4 !important;
+            padding: 0 !important;
             line-height: 40px;
             text-align: center;
-
+            height: 40px;
+            color: #fff;
         }
-
 
         select {
             border: 0;
@@ -111,9 +141,8 @@
             height: 30px;
             margin: 0;
             padding-left: 3em;
-            padding-right:3em;
+            padding-right: 3em;
             font: none 18px/24px "Microsoft YaHei UI";
-            color: #9e141a;
         }
 
         pre {
@@ -122,207 +151,582 @@
             white-space: -moz-pre-wrap;
             white-space: -o-pre-wrap;
             word-wrap: break-word;
+            color: #fff;
             line-height: 22px;
             font-size: 14px
         }
 
-        /*    测试图表显示*/
-        .char {
-            width: 90%;
-            position: absolute;
-            top: 450px;
-            margin-left: 5%;
-            color: #28a745 !important;
+        .chart4 {
+            overflow: auto;
+            width: 100%;
+            height: 600px;
+
+        }
+
+        .chart4::-webkit-scrollbar {
+            width: 10px;
+
+        }
+
+        .chart4::-webkit-scrollbar-thumb {
+            /*滚动条里面小方块*/
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px rgba(4, 0, 225, 0.62);
+            background: #272789;
+            height: 10px;
+
+        }
+
+        .chart4::-webkit-scrollbar-track {
+            /*滚动条里面轨道*/
+            -webkit-box-shadow: inset 0 0 5px rgba(0, 21, 255, 0.54);
+            border-radius: 10px;
+            background: rgba(214, 214, 214, 0.64);
+
+        }
+
+        /*详细内容描述的小标题*/
+        .table_title {
+            text-align: center;
+            background: rgba(1, 2, 37, 0.72);
+            font: bold 18px/30px 'Microsoft YaHei UI';
+            color: #fff;
+            border-radius: 10px
         }
 
     </style>
 
 </head>
 <body>
-
-<!--报告标题-->
-<div class="title text-success">
-    <div class="shadow-lg p-3 mb-5 bg-white rounded">测试报告</div>
-</div>
-
-<!--汇总信息-->
-<div class="summary">
-    <p class="text-left text-success">测试结果汇总</p>
-    <div class="left">
-        <ul class="list-group">
-            <li class="list-group-item">
-                <button type="button" class="btn btn-success">测试人员</button>
-                <span class="text-dark">测试员</span>
-            </li>
-            <li class="list-group-item">
-                <button type="button" class="btn btn-success">开始时间</button>
-                <span class="text-dark">2022-09-22 21:37:34</span>
-            </li>
-            <li class="list-group-item">
-                <button type="button" class="btn btn-success">执行时间</button>
-                <span class="text-dark">0.00 S</span>
-            </li>
-            <li class="list-group-item">
-                <button type="button" class="btn btn-success">用例总数</button>
-                <span class="text-dark">3</span>
-            </li>
-
-
-        </ul>
+<div class="main">
+    <div class="title">
+        测试报告
     </div>
-    <div class="right">
-        <ul class="list-group">
+    <div class="content-box">
+        <div class="box1">
+            <div class="panel">
+                <h2>执行结果</h2>
+                <div class="chart" id="char3"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel ">
+                <h2>成功占比</h2>
+                <div class="chart" id="char1"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="panel">
+                <h2>运行信息</h2>
+                <div class="desc">
 
-            <li class="list-group-item">
-                <button type="button" class="btn btn-success">成功用例</button>
-                <span class="text-success">2</span>
-            </li>
-            <li class="list-group-item">
-                <button type="button" class="btn btn-warning">失败用例</button>
-                <span class="text-warning">1</span>
-            </li>
-            <li class="list-group-item">
-                <button type="button" class="btn btn-danger">错误用例</button>
-                <span class="text-danger">0</span>
-            </li>
-            <li class="list-group-item">
-                <button type="button" class="btn btn-secondary">跳过用例</button>
-                <span class="text-secondary">0</span>
-            </li>
-        </ul>
-    </div>
-    <div class="desc">
-        <ul class="list-group">
-            <li class="list-group-item">
-                <button type="button" class="btn btn-success">描述信息</button>
-                <span class="text-secondary">XX项目测试生成的报告</span>
-            </li>
-        </ul>
-    </div>
-
-
-</div>
-
-<!--测试图表-->
-<div class="char">
-    <p class="text-left text-success">图表展示</p>
-    <div id="char2" style="width: 49%;height: 400px;float: left"></div>
-    <div id="char" style="width: 49%;height: 400px ;float: left"></div>
-</div>
-
-<!--详细信息-->
-<div class="test_info">
-
-    <p class="text-left text-success">详细信息</p>
-    <div class="table_data">
-
-        <table class="table">
-            <thead class="bg-success text-light">
-            <tr>
-                <th scope="col" style="width: 5%;padding: 0">编号</th>
-                <th scope="col" style="width: 20%;padding: 0">
-                    <span>测试类</span>
-                    <select id="testClass">
-                        <option>所有</option>
+                    <div class="info">
+                        <div style="flex:5">
+                            <button type="button" class="btn btn-primary btn-sm">开始时间</button>
+                            <span>2024-06-28 14:02:21</span>
+                        </div>
+                        <div style="flex:5">
+                            <button type="button" class="btn btn-primary btn-sm">用例总数</button>
+                            <span>3</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div style="flex:5">
+                            <button type="button" class="btn btn-primary btn-sm">运行时长</button>
+                            <span>0.00 S</span>
+                        </div>
+                        <div style="flex:5">
+                            <button type="button" class="btn btn-primary btn-sm ">测试人员</button>
+                            <span>测试员</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div style="flex:5">
+                            <button type="button" class="btn btn-primary btn-sm">成功用例</button>
+                            <span>2</span>
+                        </div>
+                        <div style="flex:5">
+                            <button type="button" class="btn btn-primary btn-sm ">通过率</button>
+                            <span>66.67%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <h2>通过率趋势图</h2>
+                <div class="chart2" id="char2"></div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="panel">
+                <h2>历史构建结果</h2>
+                <div class="chart4">
+                    <table class="table" style="color: #d6d6d6;padding: 0">
+                        <thead>
+                        <tr>
+                            <th scope="col">执行时间</th>
+                            <th scope="col">用例总数</th>
+                            <th scope="col">成功用例数</th>
+                            <th scope="col">通过率</th>
+                        </tr>
+                        </thead>
+                        <tbody>
                         
-                            <option>TestDome</option>
+                        <tr>
+                            <th scope="row">2024-06-28 14:02:21</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
                         
-                    </select>
+                        <tr>
+                            <th scope="row">2022-09-22 21:37:34</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-07-13 13:58:33</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-07-13 13:46:18</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-07-13 13:45:10</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-07-13 13:44:48</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-07-07 15:44:38</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-07-07 15:44:07</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-07-07 15:41:13</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-07-07 15:40:31</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-07-07 15:40:11</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-06-06 13:35:08</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-05-18 15:37:39</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-05-18 15:37:22</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-05-18 14:47:05</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-05-17 16:22:52</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-03-29 15:33:42</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-02-25 13:39:07</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-01-12 19:30:34</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-01-12 19:28:13</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-01-07 20:40:49</th>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>66.67%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-01-07 20:40:09</th>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>50.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-01-07 20:39:52</th>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>100.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-01-07 20:37:02</th>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-01-07 20:35:35</th>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-01-07 20:31:14</th>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2022-01-07 19:14:21</th>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-10-21 17:37:04</th>
+                            <td>200</td>
+                            <td>40</td>
+                            <td>20.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-31 14:07:05</th>
+                            <td>200</td>
+                            <td>40</td>
+                            <td>20.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-06 15:38:06</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-06 15:34:52</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-06 15:28:53</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 17:40:35</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 17:28:19</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 17:07:08</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 17:06:35</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 17:06:16</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 17:03:07</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 17:02:43</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 16:55:09</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 16:54:27</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 16:54:10</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 16:52:47</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 15:58:26</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 15:58:03</th>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>90.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 15:54:35</th>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>75.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 15:52:24</th>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>75.00%</td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2021-08-04 15:50:55</th>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>75.00%</td>
+                        </tr>
+                        
+                        </tbody>
+                    </table>
 
-                </th>
+                </div>
+            </div>
 
-                <th scope="col" style="width: 15%;padding: 0">测试方法</th>
-                <th scope="col" style="width: 20%;padding: 0">用例描述</th>
-                <th scope="col" style="width: 15%;padding: 0">执行时间</th>
-                <th scope="col" style="width: 20%;padding: 0">
+        </div>
+    </div>
 
-                    <span>执行结果</span>
-                    <select id="testResult">
-                        <option>所有</option>
-                        <option class="text-success">成功</option>
-                        <option class="text-warning">失败</option>
-                        <option class="text-danger">错误</option>
-                        <option class="text-info">跳过</option>
-                    </select>
+    <div class="test_info">
+        <h2>本次运行详情</h2>
+        <div class="table_data">
 
-                </th>
-                <th scope="col" style="width: 10%;padding: 0">详细信息</th>
-            </tr>
-            </thead>
-            <tbody>
-            
+            <table class="table" style="color: #fff">
+                <thead class="text-light" style="background: rgba(3, 14, 70, 0.5)">
                 <tr>
+                    <th scope="col" style="width: 5%;padding: 0">编号</th>
+                    <th scope="col" style="width: 20%;padding: 0">
+                        <span>测试类</span>
+                        <select id="testClass">
+                            <option>所有</option>
+                            
+                            <option>TestDome</option>
+                            
+                        </select>
+
+                    </th>
+                    <th scope="col" style="width: 15%;padding: 0">测试方法</th>
+                    <th scope="col" style="width: 20%;padding: 0">用例描述</th>
+                    <th scope="col" style="width: 15%;padding: 0">执行时间</th>
+                    <th scope="col" style="width: 20%;padding: 0">
+
+                        <span>执行结果</span>
+                        <select id="testResult">
+                            <option>所有</option>
+                            <option class="text-success">成功</option>
+                            <option class="text-danger">失败</option>
+                            <option class="text-warning">错误</option>
+                            <option class="text-info">跳过</option>
+                        </select>
+
+                    </th>
+                    <th scope="col" style="width: 10%;padding: 0">详细信息</th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr class="case_">
                     <td>1</td>
                     <td class="TestDome">TestDome</td>
                     <td>test_demo2_0</td>
                     <td>None</td>
-                    <td>0.0s</td>
+                    <td>0.00101s</td>
                     
-                        <td class="text-success">成功</td>
+                    <td class="text-success">成功</td>
                     
                     <td>
-                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                        <button type="button" class="btn btn_info btn-primary btn-sm">查看详情</button>
                     </td>
                 </tr>
 
                 <tr class="test_log">
 
-                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                     <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
                         
 
-                            <pre>test_demo2_0 (test_demo1.TestDome)执行——>【通过】
+                            <pre>test_demo2_0 (test_demo1.TestDome.test_demo2_0)执行——>【通过】
 </pre>
                         
                         
                     </td>
                 </tr>
-            
-                <tr>
+                
+                <tr class="case_">
                     <td>2</td>
                     <td class="TestDome">TestDome</td>
                     <td>test_demo2_1</td>
                     <td>None</td>
                     <td>0.0s</td>
                     
-                        <td class="text-success">成功</td>
+                    <td class="text-success">成功</td>
                     
                     <td>
-                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                        <button type="button" class="btn btn_info btn-primary btn-sm">查看详情</button>
                     </td>
                 </tr>
 
                 <tr class="test_log">
 
-                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                     <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
                         
 
-                            <pre>test_demo2_1 (test_demo1.TestDome)执行——>【通过】
+                            <pre>test_demo2_1 (test_demo1.TestDome.test_demo2_1)执行——>【通过】
 </pre>
                         
                         
                     </td>
                 </tr>
-            
-                <tr>
+                
+                <tr class="case_">
                     <td>3</td>
                     <td class="TestDome">TestDome</td>
                     <td>test_demo_0</td>
                     <td>None</td>
-                    <td>0.00199s</td>
+                    <td>0.0s</td>
                     
-                        <td class="text-warning">失败</td>
+                    <td class="text-warning">失败</td>
                     
                     <td>
-                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                        <button type="button" class="btn btn_info btn-primary btn-sm">查看详情</button>
                     </td>
                 </tr>
 
                 <tr class="test_log">
 
-                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                     <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
                         
 
-                            <pre>test_demo_0 (test_demo1.TestDome)执行——>【失败】
+                            <pre>test_demo_0 (test_demo1.TestDome.test_demo_0)执行——>【失败】
 </pre>
                         
 
@@ -330,23 +734,31 @@
 </pre>
                         
 
-                            <pre>  File "C:\python37\lib\unittest\case.py", line 59, in testPartExecutor
+                            <pre>  File "C:\Program Files\Python311\Lib\unittest\case.py", line 57, in testPartExecutor
     yield
 </pre>
                         
 
-                            <pre>  File "C:\python37\lib\unittest\case.py", line 615, in run
-    testMethod()
+                            <pre>  File "C:\Program Files\Python311\Lib\unittest\case.py", line 623, in run
+    self._callTestMethod(testMethod)
 </pre>
                         
 
-                            <pre>  File "C:\git_project\UnitTestReport\tests\testcases\test_demo1.py", line 16, in wrapper
+                            <pre>  File "C:\Program Files\Python311\Lib\unittest\case.py", line 579, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+</pre>
+                        
+
+                            <pre>  File "D:\githubcode\UnitTestReport\tests\testcases\test_demo1.py", line 16, in wrapper
     return test_func(self, case_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
 </pre>
                         
 
-                            <pre>  File "C:\git_project\UnitTestReport\tests\testcases\test_demo1.py", line 39, in test_demo
+                            <pre>  File "D:\githubcode\UnitTestReport\tests\testcases\test_demo1.py", line 39, in test_demo
     assert 1==2
+           ^^^^
 </pre>
                         
 
@@ -356,18 +768,355 @@
                         
                     </td>
                 </tr>
-            
+                
+            </table>
+        </div>
 
-            </tbody>
-        </table>
+        <div style="height: 200px"></div>
     </div>
 
-    <div style="height: 200px"></div>
 </div>
 
 
+
+<script type="text/javascript">
+
+    const resulte = {
+            "success": `2`,
+            "all": `3`,
+            "fail": `1`,
+            "skip": '0',
+            "error": `0`,
+            "runtime": '0.00 S',
+            "begin_time": "0.00 S",
+            "pass_rate": '66.67',
+        }
+    ;
+    const history = [{'success': 3, 'all': 4, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 15:50:55', 'pass_rate': '75.00'}, {'success': 3, 'all': 4, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 15:52:24', 'pass_rate': '75.00'}, {'success': 3, 'all': 4, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 15:54:35', 'pass_rate': '75.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 15:58:03', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 15:58:26', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 16:52:47', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 16:54:10', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 16:54:27', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 16:55:09', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 17:02:43', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 17:03:07', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 17:06:16', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 17:06:35', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 17:07:08', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 17:28:19', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-04 17:40:35', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-06 15:28:53', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-06 15:34:52', 'pass_rate': '90.00'}, {'success': 9, 'all': 10, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2021-08-06 15:38:06', 'pass_rate': '90.00'}, {'success': 40, 'all': 200, 'fail': 160, 'skip': 0, 'error': 0, 'runtime': '0.06 S', 'begin_time': '2021-08-31 14:07:05', 'pass_rate': '20.00'}, {'success': 40, 'all': 200, 'fail': 160, 'skip': 0, 'error': 0, 'runtime': '0.12 S', 'begin_time': '2021-10-21 17:37:04', 'pass_rate': '20.00'}, {'success': 0, 'all': 0, 'fail': 0, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-01-07 19:14:21', 'pass_rate': 0}, {'success': 0, 'all': 0, 'fail': 0, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-01-07 20:31:14', 'pass_rate': 0}, {'success': 0, 'all': 1, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-01-07 20:35:35', 'pass_rate': '0.00'}, {'success': 0, 'all': 1, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-01-07 20:37:02', 'pass_rate': '0.00'}, {'success': 1, 'all': 1, 'fail': 0, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-01-07 20:39:52', 'pass_rate': '100.00'}, {'success': 1, 'all': 2, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-01-07 20:40:09', 'pass_rate': '50.00'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-01-07 20:40:49', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-01-12 19:28:13', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-01-12 19:30:34', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-02-25 13:39:07', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-03-29 15:33:42', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-05-17 16:22:52', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-05-18 14:47:05', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-05-18 15:37:22', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-05-18 15:37:39', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-06-06 13:35:08', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-07-07 15:40:11', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-07-07 15:40:31', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-07-07 15:41:13', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.02 S', 'begin_time': '2022-07-07 15:44:07', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-07-07 15:44:38', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-07-13 13:44:48', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-07-13 13:45:10', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-07-13 13:46:18', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-07-13 13:58:33', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2022-09-22 21:37:34', 'pass_rate': '66.67'}, {'success': 2, 'all': 3, 'fail': 1, 'skip': 0, 'error': 0, 'runtime': '0.00 S', 'begin_time': '2024-06-28 14:02:21', 'pass_rate': '66.67'}];
+
+    var passRate = [];
+    var dTime = [];
+    history.forEach(function (item, index, array) {
+        passRate.push(item.pass_rate);
+        dTime.push(item.begin_time)
+    });
+    if (passRate.length === 1) {
+        passRate.unshift(0);
+        dTime.unshift(0)
+    }
+
+    function char01() {
+        let myChart = echarts.init(document.getElementById('char1'));
+        let option = {
+            color: ['#28a745', '#ffc107', '#dc3545', '#17a2b8'],
+            tooltip: {
+                trigger: 'item',
+                formatter: '{a} <br/>{b}: {c} ({d}%)',
+                backgroundColor: 'rgba(3, 14, 70, 0.5)',
+                borderColor: '#333',
+                textStyle: {
+                    color: '#fff',
+                    fontSize: "13"
+                },
+            },
+            legend: {
+                bottom: "0%",
+                // 小图标的宽度和高度
+                itemWidth: 10,
+                itemHeight: 10,
+                data: ['通过', '失败', '错误', '跳过'],
+                textStyle: {
+                    color: "rgba(255,255,255,.5)",
+                    fontSize: "12"
+                },
+            },
+            series: [
+                {
+                    name: '测试结果',
+                    type: 'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: '20',
+                            fontWeight: 'bold',
+                            color: '#fff',
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: [
+                        {value: resulte.success, name: '通过'},
+                        {value: resulte.fail, name: '失败'},
+                        {value: resulte.error, name: '错误'},
+                        {value: resulte.skip, name: '跳过'}
+                    ]
+                }
+            ]
+        };
+        myChart.setOption(option)
+
+    }
+
+    char01();
+
+    //    大图
+    function char02() {
+
+        // 基于准备好的dom，初始化echarts实例
+        let myChart = echarts.init(document.getElementById("char2"));
+        // 2. 指定配置和数据
+        option = {
+            tooltip: {
+                trigger: 'axis',
+                formatter: '{a} <br/>{b}:  ({c}%)',
+                backgroundColor: 'rgba(3, 14, 70, 0.5)',
+                borderColor: '#333',
+                textStyle: {
+                    color: '#fff',
+                    fontSize: "13"
+                },
+            },
+
+            grid: {
+                left: "10",
+                top: "30",
+                right: "10",
+                bottom: "0",
+                containLabel: true
+            },
+
+            xAxis: [{
+                type: "category",
+                boundaryGap: false,
+                show: false,
+                axisLabel: {
+                    textStyle: {
+                        color: "rgba(255,255,255,.6)",
+                        fontSize: 12
+                    }
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: "rgba(255,255,255,.2)"
+                    }
+                },
+
+                data: dTime
+            },
+                {
+                    axisPointer: {
+                        show: false
+                    },
+                    axisLine: {
+                        show: false
+                    },
+                    position: "bottom",
+                    offset: 20
+                }
+            ],
+
+            yAxis: [{
+                type: "value",
+                axisTick: {
+                    show: false
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: "rgba(255,255,255,.1)"
+                    }
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: "rgba(255,255,255,.6)",
+                        fontSize: 12
+                    }
+                },
+
+                splitLine: {
+                    lineStyle: {
+                        color: "rgba(255,255,255,.1)"
+                    }
+                }
+            }],
+            series: [{
+                name: "通过率",
+                type: "line",
+                smooth: true,
+                symbol: "circle",
+                symbolSize: 5,
+                showSymbol: true,
+                lineStyle: {
+                    normal: {
+                        color: "#0184d5",
+                        width: 2
+                    }
+                },
+                areaStyle: {
+                    normal: {
+                        color: new echarts.graphic.LinearGradient(
+                            0,
+                            0,
+                            0,
+                            1,
+                            [{
+                                offset: 0,
+                                color: "rgba(1, 132, 213, 0.4)"
+                            },
+                                {
+                                    offset: 0.8,
+                                    color: "rgba(1, 132, 213, 0.1)"
+                                }
+                            ],
+                            false
+                        ),
+                        shadowColor: "rgba(0, 0, 0, 0.1)"
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        color: "#0184d5",
+                        borderColor: "rgba(221, 220, 107, .1)",
+                        borderWidth: 18
+                    }
+                },
+                data: passRate
+            },
+            ]
+        };
+        // 重新把配置好的新数据给实例对象
+        myChart.setOption(option);
+
+    }
+
+    char02();
+
+    function char03() {
+        // 基于准备好的dom，初始化echarts实例
+        let myChart = echarts.init(document.getElementById("char3"));
+        var data = [resulte.success, resulte.fail, resulte.error, resulte.skip];
+        var titlename = ["通过用例", "失败用例", "错误用例", "跳过用例",];
+        var valdata = [resulte.all, resulte.all, resulte.all, resulte.all];
+        var myColor = ['#28a745', '#ffc107', '#dc3545', '#17a2b8'];
+        option = {
+            //图标位置
+            grid: {
+                top: "10%",
+                left: "22%",
+                bottom: "10%"
+            },
+            xAxis: {
+                show: false
+            },
+            yAxis: [{
+                show: true,
+                data: titlename,
+                inverse: true,
+                axisLine: {
+                    show: false
+                },
+                splitLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLabel: {
+                    color: "#fff",
+
+                    rich: {
+                        lg: {
+                            backgroundColor: "#339911",
+                            color: "#fff",
+                            borderRadius: 15,
+                            align: "center",
+                            width: 15,
+                            height: 15
+                        }
+                    }
+                }
+            },
+                {
+                    show: false,
+                    inverse: true,
+                    data: valdata,
+                    axisLabel: {
+                        textStyle: {
+                            fontSize: 12,
+                            color: "#fff"
+                        }
+                    },
+                    axisTick: {
+                        show: false
+                    },
+                    axisLine: {
+                        show: false
+                    },
+                }
+            ],
+            series: [{
+                type: "bar",
+                yAxisIndex: 0,
+                data: data,
+                barCategoryGap: 50,
+                barWidth: 18,
+                itemStyle: {
+                    normal: {
+                        barBorderRadius: 20,
+                        color: function (params) {
+                            var num = myColor.length;
+                            return myColor[params.dataIndex % num];
+                        }
+                    }
+                },
+                label: {
+                    normal: {
+                        show: true,
+                        position: "right",
+                        formatter: "{c}条",
+                        color:"#fff",
+
+                    }
+                }
+            },
+                {
+                    type: "bar",
+                    yAxisIndex: 1,
+                    barCategoryGap: 50,
+                    data: valdata,
+                    barWidth: 20,
+                    itemStyle: {
+                        normal: {
+                            color: "none",
+                            borderColor: "#00c1de",
+                            borderWidth: 2,
+                            barBorderRadius: 15
+                        }
+                    }
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        window.addEventListener("resize", function () {
+            myChart.resize();
+        });
+    }
+
+    char03()
+
+</script>
+
+
 <script>
-    var tbodyTr = $('tbody tr');
+    var tbodyTr = $('tbody .case_');
     var testResult = $("#testResult");
     var testClass = $("#testClass");
     <!--    用例执行详细信息显示切换-->
@@ -377,6 +1126,7 @@
     });
     // 当选择用例类之后触发
     testClass.change(function () {
+        $('.test_log').hide();
         var cls = $(this).val();
         var res = testResult.val();
         elementDisplay(cls, res);
@@ -398,13 +1148,13 @@
                 tbodyTr.hide();
                 tbodyTr.has('button').has('.text-success').show()
 
-            } else if (res === '失败') {
-                tbodyTr.hide();
-                tbodyTr.has('button').has('.text-warning').show()
-
             } else if (res === '错误') {
                 tbodyTr.hide();
                 tbodyTr.has('button').has('.text-danger').show()
+
+            } else if (res === '失败') {
+                tbodyTr.hide();
+                tbodyTr.has('button').has('.text-warning').show()
 
             } else if (res === '跳过') {
                 tbodyTr.hide();
@@ -417,12 +1167,12 @@
             } else if (res === '成功') {
                 tbodyTr.hide();
                 tbodyTr.has('button').has('.' + cls + '').has('.text-success').show()
-            } else if (res === '失败') {
-                tbodyTr.hide();
-                tbodyTr.has('button').has('.' + cls + '').has('.text-warning').show()
             } else if (res === '错误') {
                 tbodyTr.hide();
                 tbodyTr.has('button').has('.' + cls + '').has('.text-danger').show()
+            } else if (res === '失败') {
+                tbodyTr.hide();
+                tbodyTr.has('button').has('.' + cls + '').has('.text-warning').show()
             } else if (res === '跳过') {
                 tbodyTr.hide();
                 tbodyTr.has('button').has('.' + cls + '').has('.text-info').show()
@@ -442,86 +1192,12 @@
 
     }
 
+    $('.nav-tabs li').click(function () {
+        $(this).find('a').addClass('active');
+        $(this).siblings().find('a').removeClass('active');
+        $(this).parent().next().children('.tab-content div').eq($(this).index()).addClass('active show').siblings().removeClass('active show')
+    });
 
-</script>
-
-<script type="text/javascript">
-    // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('char'));
-    var myChart2 = echarts.init(document.getElementById('char2'));
-    // 指定图表的配置项和数据
-    option = {
-        color: ['#00a10a', '#ddb518', 'rgba(204,46,41,0.73)', '#85898c'],
-        tooltip: {
-            trigger: 'item',
-            formatter: '{a} <br/>{b}: {c} ({d}%)'
-        },
-        legend: {
-            orient: 'vertical',
-            left: 10,
-            data: ['通过', '失败', '错误', '跳过']
-        },
-        series: [
-            {
-                name: '测试结果',
-                type: 'pie',
-                radius: ['50%', '70%'],
-                avoidLabelOverlap: false,
-                label: {
-                    show: false,
-                    position: 'center'
-                },
-                emphasis: {
-                    label: {
-                        show: true,
-                        fontSize: '30',
-                        fontWeight: 'bold'
-                    }
-                },
-                labelLine: {
-                    show: false
-                },
-                data: [
-                    {value: 2, name: '通过'},
-                    {value: 1, name: '失败'},
-                    {value: 0, name: '错误'},
-                    {value: 0, name: '跳过'}
-                ]
-            }
-        ]
-    };
-    option2 = {
-        tooltip: {
-            formatter: '{a} <br/>{b} : {c}%'
-        },
-        toolbox: {
-            feature: {
-                restore: {},
-                saveAsImage: {}
-            }
-        },
-        series: [
-            {
-                name: '测试结果',
-                type: 'gauge',
-                detail: {formatter: '66.67%'},
-                data: [{value: '66.67', name: '用例通过率'}],
-                axisLine: {
-                    lineStyle: {
-                        color: [
-                            [0.2, '#c20000'],
-                            [0.8, '#ddb518'],
-                            [1, '#00a10a']]
-                    }
-                }
-            }
-        ]
-    };
-
-
-    myChart2.setOption(option2);
-    // 使用刚指定的配置项和数据显示图表。
-    myChart.setOption(option);
 </script>
 
 
